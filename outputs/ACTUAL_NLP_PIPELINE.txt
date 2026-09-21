@@ -1,0 +1,25 @@
+ACTUAL NLP PIPELINE AUDIT REPORT
+================================
+
+                   Library Imported? Actually Used?                                  Purpose                                                               Files
+                  textblob        No             No                                     None                                                                None
+                  TextBlob        No             No                                     None                                                                None
+            vaderSentiment        No             No                                     None                                                                None
+SentimentIntensityAnalyzer        No             No                                     None                                                                None
+                      nltk       Yes            Yes  Stop-words corpus & lemmatizer fallback                                                src\preprocessing.py
+                     spacy        No             No                                     None                                                                None
+              transformers        No             No                                     None                                                                None
+                   sklearn       Yes             No Feature extraction & supervised ML model src\evaluation.py, src\feature_extraction.py, src\model_training.py
+           TfidfVectorizer       Yes            Yes Feature extraction & supervised ML model                                           src\feature_extraction.py
+        LogisticRegression       Yes            Yes Feature extraction & supervised ML model                                               src\model_training.py
+             MultinomialNB       Yes            Yes Feature extraction & supervised ML model                                               src\model_training.py
+                  pipeline        No            Yes                                     None                                                                None
+                    joblib       Yes            Yes            Model serialization / loading src\prediction.py, src\feature_extraction.py, src\model_training.py
+                    pickle        No             No                                     None                                                                None
+
+
+EXPLICIT LIBRARY VERIFICATION:
+- TextBlob is NOT imported or used in any part of the project.
+- VADER (vaderSentiment) is NOT imported or used in any part of the project.
+- SpaCy / Transformers are NOT imported or used.
+- Scikit-Learn (TfidfVectorizer + LogisticRegression) and NLTK are the ONLY active NLP/ML frameworks.

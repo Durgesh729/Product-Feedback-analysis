@@ -1,0 +1,137 @@
+domain,expected_sentiment,review_text,is_qualitative
+electronics,Positive,The battery life on these noise canceling headphones is phenomenal.,False
+electronics,Positive,Crisp audio display and smooth refresh rate make this monitor exceptional.,False
+electronics,Positive,Fast wireless charging pad that works reliably every single night.,False
+electronics,Positive,The soundstage on these studio monitors exceeded all my expectations.,False
+electronics,Positive,Seamless Bluetooth connectivity and incredible bass performance.,False
+electronics,Negative,The screen cracked after two days and the touch response is completely unresponsive.,False
+electronics,Negative,Terrible Wi-Fi reception and it constantly disconnects during streaming.,False
+electronics,Negative,Overheats within ten minutes of light usage and shuts down repeatedly.,False
+electronics,Negative,The charging port loose pin broke on the first week of purchase.,False
+electronics,Negative,Low quality speaker with distorted audio and static noise.,False
+electronics,Neutral,The tablet comes with a standard USB cable and user manual in the box.,False
+electronics,Neutral,Screen resolution is 1080p and measures 15.6 inches diagonally.,False
+electronics,Neutral,It features two HDMI ports and one optical audio output jack.,False
+electronics,Neutral,The device operates on 5 volts DC input power supply.,False
+electronics,Neutral,Includes a basic plastic carrying case and warranty documentation.,False
+personal care,Positive,This electric toothbrush leaves my teeth feeling dentist clean every morning.,False
+personal care,Positive,Super quiet hair dryer that dries my hair in half the usual time.,False
+personal care,Positive,Very smooth shave with zero skin irritation or razor burn.,False
+personal care,Positive,Great battery runtime on this beard trimmer and easy to clean heads.,False
+personal care,Positive,Gentle water flosser with adjustable pressure settings that works wonderfully.,False
+personal care,Negative,The razor blades dull after just one use and pull on facial hair.,False
+personal care,Negative,The heating element on this curling iron melted the plastic tip.,False
+personal care,Negative,Battery stopped holding charge after three charges on this shaver.,False
+personal care,Negative,Extremely loud motor and vibration makes it uncomfortable to hold.,False
+personal care,Negative,The attachment heads snap off easily and feel flimsy.,False
+personal care,Neutral,The package includes four replacement brush heads and a travel pouch.,False
+personal care,Neutral,This hair trimmer runs on two AA batteries and has a LED indicator.,False
+personal care,Neutral,The device dimensions are 7 inches by 2 inches by 1.5 inches.,False
+personal care,Neutral,Contains stainless steel blades and a washable waterproof housing.,False
+personal care,Neutral,Operates at two distinct speed levels selected via a side toggle switch.,False
+kitchen,Positive,Blends frozen fruits into smooth smoothies in seconds effortlessly.,False
+kitchen,Positive,Heavy duty cast iron skillet that retains heat evenly across the surface.,False
+kitchen,Positive,Nonstick coating works amazingly well and cleans up with a simple wipe.,False
+kitchen,Positive,Sharp chef knife that cuts through meats and vegetables effortlessly.,False
+kitchen,Positive,The pressure cooker seals perfectly and cooks meals in record time.,False
+kitchen,Negative,The nonstick layer started peeling into our food after two weeks of hand washing.,False
+kitchen,Negative,Glass lid shattered under normal stovetop heat producing dangerous shards.,False
+kitchen,Negative,Blender motor smoked and burnt out on the first attempt to crush ice.,False
+kitchen,Negative,Coffee maker leaks water from the bottom reservoir onto the counter.,False
+kitchen,Negative,Can opener gears slipped and jammed completely on the first tin.,False
+kitchen,Neutral,The kettle holds 1.7 liters of liquid and features auto shutoff.,False
+kitchen,Neutral,Made of 304 grade stainless steel with a brushed metallic finish.,False
+kitchen,Neutral,Includes three measuring cups and two silicone spatulas.,False
+kitchen,Neutral,Dishwasher safe cookware set rated for up to 400 degrees Fahrenheit.,False
+kitchen,Neutral,Measures 12 inches long by 8 inches wide and weighs 2 pounds.,False
+apparel,Positive,Super comfortable cotton fabric with perfect fit and great stitching quality.,False
+apparel,Positive,Warm fleece lining that keeps me cozy during cold winter runs.,False
+apparel,Positive,Durable denim jeans that retain their color and shape after multiple washes.,False
+apparel,Positive,Breathable mesh material that keeps feet cool during long workouts.,False
+apparel,Positive,Elegant dress fit that matches the size chart exactly as described.,False
+apparel,Negative,Shirt shrunk two sizes after a single cold water wash.,False
+apparel,Negative,The zipper tore away from the fabric on the first wear.,False
+apparel,Negative,Colors faded completely into a dull grey after one machine wash.,False
+apparel,Negative,Itchy cheap material that feels uncomfortable against the skin.,False
+apparel,Negative,Seams unravelled around the armpits after light casual walking.,False
+apparel,Neutral,The sweater is composed of 80 percent cotton and 20 percent polyester.,False
+apparel,Neutral,Available in sizes Small through Extra Large in neutral gray color.,False
+apparel,Neutral,Features two side pockets and a standard front button closure.,False
+apparel,Neutral,Washing instructions recommend cold machine wash with mild detergent.,False
+apparel,Neutral,Garment weight is approximately 350 grams with ribbed cuffs.,False
+automotive,Positive,Bright LED headlight bulbs that significantly improve night driving visibility.,False
+automotive,Positive,Heavy duty floor mats that trap dirt and fit the car footwells perfectly.,False
+automotive,Positive,Smooth wiper blades that clear heavy rain without squeaking or streaking.,False
+automotive,Positive,Compact tire inflator that pumped up my flat tire quickly and quietly.,False
+automotive,Positive,High quality car wax that leaves a deep glossy protective shine.,False
+automotive,Negative,Oil filter threading was stripped causing a severe engine leak.,False
+automotive,Negative,Car battery failed completely after only one month of normal driving.,False
+automotive,Negative,Brake pads produced unbearable squealing noise and excessive dust.,False
+automotive,Negative,Dash cam video recorded corrupted unplayable files during driving.,False
+automotive,Negative,Seat covers ripped along the elastic seams while being installed.,False
+automotive,Neutral,Standard 12 volt car accessory plug with an inline 10 amp fuse.,False
+automotive,Neutral,Fits standard 15 inch wheel rims and includes mounting hardware.,False
+automotive,Neutral,Synthetic motor oil meeting SAE 5W-30 viscosity specifications.,False
+automotive,Neutral,The package contains two microfiber cleaning cloths and one applicator pad.,False
+automotive,Neutral,Designed for OBD2 protocol vehicle diagnostic ports.,False
+beauty,Positive,Hydrating face moisturizer that absorbs quickly without feeling greasy.,False
+beauty,Positive,Vibrant lipstick color that stays intact all day without smudging.,False
+beauty,Positive,Restorative hair serum that eliminated frizz and added healthy shine.,False
+beauty,Positive,Gentle cleansing foam that leaves skin feeling refreshed and soft.,False
+beauty,Positive,Excellent foundation coverage that blends smoothly with natural skin tone.,False
+beauty,Negative,Caused severe skin redness and allergic breakout within hours.,False
+beauty,Negative,Mascara clumpy application that flaked off into eyes throughout the day.,False
+beauty,Negative,Strong unpleasant chemical perfume scent that triggered severe headaches.,False
+beauty,Negative,Nail polish peeled off in full sheets within hours of application.,False
+beauty,Negative,Eye shadow container arrived completely crushed with powder spilled everywhere.,False
+beauty,Neutral,Formulated without parabens or sulfates in a 50ml glass jar.,False
+beauty,Neutral,Product contains hyaluronic acid and vitamin C as active ingredients.,False
+beauty,Neutral,Net weight is 1.7 ounces with a pump dispenser nozzle.,False
+beauty,Neutral,Expiration date is stamped on the bottom of the outer cardboard box.,False
+beauty,Neutral,Apply twice daily to clean skin using light upward strokes.,False
+home,Positive,Ultra soft bed sheets that feel like staying in a luxury hotel.,False
+home,Positive,Powerful vacuum cleaner that picked up all stubborn pet hair effortlessly.,False
+home,Positive,Sturdy bookshelf that assembled easily with clear concise instructions.,False
+home,Positive,Blackout curtains that block 100 percent of morning sunlight effectively.,False
+home,Positive,Quiet room air purifier that noticeably reduced dust and allergies.,False
+home,Negative,Desk leg collapsed under light weight causing computer monitor to fall.,False
+home,Negative,Vacuum cleaner lost all suction power on the third day of use.,False
+home,Negative,Curtain rod bent under the weight of light fabric drapery.,False
+home,Negative,Cheap particle board emitted foul chemical fumes for weeks.,False
+home,Negative,Mattress sagged significantly in the middle after two weeks.,False
+home,Neutral,The floor lamp stands 60 inches tall and uses a standard E26 bulb.,False
+home,Neutral,Constructed from engineered wood with an oak veneer finish.,False
+home,Neutral,"Set includes one fitted sheet, one flat sheet, and two pillowcases.",False
+home,Neutral,Operates on 120 volt AC household electrical power outlet.,False
+home,Neutral,Dimensions are 36 inches long by 18 inches deep by 30 inches high.,False
+sports,Positive,Durable yoga mat with superior floor grip that does not slip at all.,False
+sports,Positive,High quality resistance bands that withstand heavy tension workouts easily.,False
+sports,Positive,Comfortable running shoes with plush cushioning and great arch support.,False
+sports,Positive,Sturdy mountain bike helmet with easy adjustment dial and light weight.,False
+sports,Positive,Waterproof camping tent that stayed completely dry through a rainstorm.,False
+sports,Negative,Resistance band snapped during first stretch hitting my arm hard.,False
+sports,Negative,Basketball lost air pressure within two hours of inflation repeatedly.,False
+sports,Negative,Trekking pole lock slipped causing it to collapse while hiking uphill.,False
+sports,Negative,Goggles fogged up instantly and leaked pool water into eyes.,False
+sports,Negative,Dumbbell coating cracked exposing rusted iron underneath upon arrival.,False
+sports,Neutral,The water bottle has a 32 ounce capacity with volume markers.,False
+sports,Neutral,Yoga block measures 9 inches by 6 inches by 4 inches in size.,False
+sports,Neutral,Made from high density EVA foam material weighing 0.5 pounds.,False
+sports,Neutral,Includes a nylon carrying strap and mesh storage bag.,False
+sports,Neutral,Suitable for indoor gym exercise and outdoor fitness training.,False
+grocery,Positive,Rich dark roast coffee beans with incredible fresh aroma and flavor.,False
+grocery,Positive,Crisp delicious organic granola with wholesome nuts and dried berries.,False
+grocery,Positive,Authentic extra virgin olive oil with rich pepper notes and great taste.,False
+grocery,Positive,Delicious dark chocolate bars with smooth texture and rich cocoa content.,False
+grocery,Positive,Fresh herbal tea bags that brew a soothing comforting cup every time.,False
+grocery,Negative,Package arrived completely expired by three months with moldy contents.,False
+grocery,Negative,Stale rock hard cookies that tasted completely rancid upon opening.,False
+grocery,Negative,Canned goods arrived crushed and leaking inside the shipping box.,False
+grocery,Negative,Bland flavorless soup mix containing excessive salt and artificial taste.,False
+grocery,Negative,Bag had a tear spilling loose grains all over the outer box.,False
+grocery,Neutral,Contains 12 individually wrapped single serve snack packets.,False
+grocery,Neutral,Net weight 16 ounces certified organic by USDA guidelines.,False
+grocery,Neutral,Nutrition facts report 150 calories and 3 grams of sugar per serving.,False
+grocery,Neutral,Store in a cool dry place away from direct sunlight exposure.,False
+grocery,Neutral,"Ingredients include whole oats, almonds, honey, and natural vanilla.",False
+personal care,Negative,The angle provided in this interdental brush is not accurate. It hurts the gums. The bristle pin length is very short for pre molar and molar teeth. So difficult clean teeth from one side. Poor quality plastic is used.,True

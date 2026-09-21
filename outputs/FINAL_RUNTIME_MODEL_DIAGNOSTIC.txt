@@ -1,0 +1,84 @@
+================================================================================
+PRODUCT FEEDBACK SENTIMENT ANALYSIS — FINAL RUNTIME MODEL DIAGNOSTIC REPORT
+================================================================================
+
+1. TESTED REVIEW TEXT
+--------------------------------------------------------------------------------
+"Angle provided in this interdental brush is not accurate. It hurts the gums. The bristle pin length is very short for pre molar and molar teeth. So difficult clean teeth from one side. Poor quality plastic is used."
+
+2. RUNTIME MODEL & VECTORIZER RESOURCE VERIFICATION
+--------------------------------------------------------------------------------
+- Loaded Model File Path:      C:\Users\DURGESH PADVAL\Documents\NLP project\models\sentiment_model.pkl
+- Loaded Vectorizer File Path: C:\Users\DURGESH PADVAL\Documents\NLP project\models\tfidf_vectorizer.pkl
+- model.classes_:               ['Negative', 'Neutral', 'Positive']
+- Model Class Weight:           balanced (Model B)
+- Model Build Timestamp:        2026-09-19 19:41:21
+- File Modification Timestamp:  2026-09-19 19:41:21
+
+3. PREPROCESSING BREAKDOWN
+--------------------------------------------------------------------------------
+- Cleaned Text:   "angle provided in this interdental brush is not accurate it hurts the gums the bristle pin length is very short for pre molar and molar teeth so difficult clean teeth from one side poor quality plastic is used"
+- Processed Text: "angle provided interdental brush not accurate hurt gum bristle pin length short pre molar molar teeth difficult clean teeth one side poor quality plastic used"
+
+4. DIRECT MODEL VS LIVE API PREDICTION COMPARISON
+--------------------------------------------------------------------------------
+- Direct Python Model Prediction: Positive
+- Direct Probabilities:           Negative = 16.65%, Neutral = 23.88%, Positive = 59.47%
+- Live FastAPI Endpoint Status:   HTTP 200 OK (/api/predict/single)
+- Live API Endpoint Prediction:   Positive
+- Live API Probabilities:         Negative = 16.65%, Neutral = 23.88%, Positive = 59.47%
+- Direct vs API Match:            TRUE (100% Synchronized — No stale server or model mismatch)
+
+5. TRAINING DATASET FREQUENCY ANALYSIS (clean_training_reviews.csv)
+--------------------------------------------------------------------------------
+Term           | Total Matches | Positive (4-5 Star) | Negative (1-2 Star) | Neutral (3 Star)
+--------------------------------------------------------------------------------
+interdental    | 0             | 0                   | 0                   | 0
+brush          | 0             | 0                   | 0                   | 0
+gum            | 0             | 0                   | 0                   | 0
+teeth          | 0             | 0                   | 0                   | 0
+molar          | 0             | 0                   | 0                   | 0
+bristle        | 0             | 0                   | 0                   | 0
+angle          | 1             | 1                   | 0                   | 0
+accurate       | 9             | 7                   | 1                   | 1
+hurt           | 8             | 6                   | 2                   | 0
+difficult      | 12            | 10                  | 1                   | 1
+plastic        | 32            | 28                  | 3                   | 1
+quality        | 260           | 232                 | 23                  | 5
+
+6. TF-IDF FEATURE CONTRIBUTION & LOGISTIC REGRESSION COEFFICIENTS
+--------------------------------------------------------------------------------
+- Out of 25 preprocessed tokens, 10 dental-specific terms ('interdental', 'brush', 'gum',
+  'teeth', 'molar', 'bristle', 'pin') were COMPLETELY OUT OF VOCABULARY (0 training frequency).
+- The general terms present in the vocabulary carried positive learned weights from the training set:
+  * 'quality': 232 Positive vs 23 Negative in training (91% Positive co-occurrence)
+  * 'plastic': 28 Positive vs 3 Negative in training (90% Positive co-occurrence)
+  * 'provided': Positive linear coefficient = +0.3074
+  * 'hurt': Co-occurred in contrastive positive contexts ("Doesn't hurt my wallet")
+- Result: The linear combination of TF-IDF feature weights produced a positive logit score,
+  resulting in 59.47% Positive probability.
+
+7. ROOT CAUSE DETERMINATION & CLASSIFICATION
+--------------------------------------------------------------------------------
+CLASSIFICATION: GENUINE DOMAIN INCOMPATIBILITY & MODEL GENERALIZATION BOUNDARY
+
+EXPLANATION:
+1. The training dataset (amazon_reviews.csv) is exclusively composed of e-commerce SanDisk MicroSD
+   memory card reviews.
+2. Personal care / dental hygiene products (interdental brushes, bristles, gums, molars) fall
+   completely outside the product domain represented in the dataset.
+3. Because 10 out of 25 words were out-of-vocabulary, the TF-IDF model evaluated the review using only
+   general words ('quality', 'plastic', 'provided', 'clean'), which carry positive associations
+   in the SD card training dataset.
+4. This represents the structural boundary of static bag-of-words (TF-IDF) models trained on a single
+   product category when presented with out-of-category product feedback.
+
+8. RECOMMENDED LONG-TERM MODEL IMPROVEMENTS
+--------------------------------------------------------------------------------
+1. Multi-Category Training Corpus: Retrain the supervised model on a multi-category product review
+   dataset (e.g., Amazon Multi-Domain Sentiment Dataset covering Electronics, Beauty, Personal Care, Health).
+2. Contextual Embeddings: Upgrade from static TF-IDF n-grams to contextual pre-trained transformer
+   embeddings (BERT / RoBERTa / DistilBERT) that understand clause negation and sub-clause sentiment
+   across diverse product domains.
+
+================================================================================

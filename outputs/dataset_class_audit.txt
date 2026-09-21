@@ -1,0 +1,203 @@
+DATASET CLASS AUDIT REPORT
+=========================
+
+Total Rows: 4915
+
+Sentiment Counts:
+sentiment
+Positive    4449
+Negative     324
+Neutral      142
+
+
+==========================================
+20 RANDOM SAMPLES FOR CLASS: Negative
+==========================================
+
+Rating: 2.0 | Sentiment: Negative
+Review: I have had the 32gb in my Galaxy S3 for almost three months and there were no issues. However, the phone just recently started telling me the card has unrecognized files or it is empty, causing the loss of my media. I chose to format it after seeing the error for too long, chalking it up to some random error. Somehow, yesterday, all of the files on my card magically reappeared and I was able to play my music again, despite having had the phone format the card. Shortly afterwards, the error reappeared. I put the card in my computer and it is simply not appearing. Shame, but I think this is a risky card to purchase.
+
+Rating: 1.0 | Sentiment: Negative
+Review: Sandisk has the name but in my experience the quality and speed is not there. My lexar lasted longer and outperformed this chip.
+
+Rating: 2.0 | Sentiment: Negative
+Review: I just called Sandisk and they say they have a new card version that corrects the problem. 1-866-SANDISK (726-3475)Sandisk Tech says that the new package will show that the card is made after March, 2013 (don't know if that includes March, but probably does), and it should be corrected. Some older than late 2012 reportedly are ok.  Who knows.They even say that they will provide a free UPS return label.Of course, you are taking a risk as to whether the problem is really fixed, so keep backups.  I don't know what I would do.
+
+Rating: 1.0 | Sentiment: Negative
+Review: I routinely use SDXC cards up to 128GB, and this card was unreadable on arrival.  Both of my PCs said it needed to be formatted, and as a last resort I let one of them try (Windows 7/i7with up-to-date SDXC drivers), and it could not format it.  It's on its way back to Amazon.  I'm glad their returns are so easy!
+
+Rating: 2.0 | Sentiment: Negative
+Review: In real-life use--copying compressed files to and from the card--it clocks in at barely over half the advertised speeds: about 16MB/s read and about 7.5MB/s write, as averaged between testing on several SD slots (some USB-connected, some PCIe-connected) on several computers, plus a just-released smartphone. Very unimpressed by the &#34;up to&#34; marketing of SD card vendors and makers.The actual raw size is also about 59.5GB, which I find fascinating for a flash device, which is only ever manufactured with powers-of-two components. (1KB = 1,024B)
+
+Rating: 1.0 | Sentiment: Negative
+Review: Used it in a Samsung Galaxy S3 and it was ruined within a month.  Second one I went through on that phone.  Contacted Verizon, Samsung, SanDisk, Google, and read a lot of forums.  Turns out a lot of people were having the issue with that phone and these cards.Of course the girlfriend threw away the card so I couldn't return it, so I don't know if the issue was fixed or if was a bad batch of cards that went out or what.  It's been a few months and I haven't seen the problem as much as before, so I can only assume it was a bad batch.I've had another card in my phone for a while and haven't had any issues, so for now I can't recommend this specific card unless their issue has been addressed.
+
+Rating: 1.0 | Sentiment: Negative
+Review: It appears that the 32GB SanDisk Ultra Micro SD Card I purchased from Amazon was defective.  I installed it in my Samsung Tablet, but could not successfully transfer files using either a USB cable or WiFi.  The file transfer would appear to start, but then would slow down and hang completely.  It did this on every one of multiple attempts, with different file types, and numbers of files ranging from many to just a single file.  I tried loading files onto the card directly from my PC, but then the Tablet would not see them.  I tried reformatting the card both in my PC and in the Tablet, but still got the same result.  After a few tries, the Tablet would appear to format the card but then tell me that the card was blank/unformatted.  I did an A/B/A with an old 8GB Sandisk Micro SD Card that I had laying around.  It worked perfectly -- formating, transferring files, reading and writing files -- everthing worked.  I put the 32GB SanDisk Ultra Card back in the Tablet, but had the same problems again.  I concluded that the SanDisk Ultra card was defective and returned it.  I'm still using the old 8GB card without a hiccup.The good thing was that Amazon's return policy was quick and painless.
+
+Rating: 1.0 | Sentiment: Negative
+Review: I had it for a day before it died and lost all my data. Not what I expected from SanDisk or any microSD card in this case.
+
+Rating: 1.0 | Sentiment: Negative
+Review: I returned to order a 11.6 laptop so I could have full operations than having a Notebook. I am sure this is good quality as I have purchased San Disk numerous times.
+
+Rating: 1.0 | Sentiment: Negative
+Review: I have exclusively used Sandisk Extreme cards in my pro photography gear for years and they have NEVER let me down. This one is a dud, though. I plugged it in, let my phone format it, and then start copying to it. Everything copied just fine, but after I got done, that's when it started acting up.If I had my phone plugged into the computer and was using it as a storage device, I got tons of CRC errors and/or messages saying that I needed to format the card before using it. The phone would come up from time to time saying that I had inserted a blank card. If I reboot the phone, it works fine for a little bit, and the errors would start again. I thought maybe it was the way the phone formatted, so I tried to format it on the computer, but that didn't help anything.Very frustrating! Thankfully I've had it for 2 days before the trouble started, so it's going back to Amazon for a refund and I'll have to find a more reliable card for my phone.
+
+Rating: 2.0 | Sentiment: Negative
+Review: I ordered this card as part of a lighning deal back in November. The card was working fine in my galaxy s3 until a few weeks ago where it would intermittently not be recognized by my phone or my desktop computer and today, 4 months later, it died completely. I guess you really do get what you pay for.
+
+Rating: 1.0 | Sentiment: Negative
+Review: It Failed. It only worked 3 months.I used it in a Galaxy S3 phone. It seems that this brand has an issue with this model.I lost the information.
+
+Rating: 1.0 | Sentiment: Negative
+Review: item i ordered was 64gb it listed it on the card but this was tested and at most was 1gb and very oldi would steer far away from sandisk sold online unless it is in original packagingI returned it for a full refund and reordered and oem 64gb card from samsung
+
+Rating: 1.0 | Sentiment: Negative
+Review: First, it kept unmounting on the Galaxy Note 10.1I got it replaced.I used the replacement on my Galaxy S4 and it heats up my phone when charging. IT GETS VERY HOT. GS4 does not get hot with other sd cards. awaiting my second replacement.
+
+Rating: 1.0 | Sentiment: Negative
+Review: We ordered these and used them in my Galaxy Note 2 and my wife's Razr M. After a few months we noticed that they would cause the phone to freeze up. The phones would start showing that it was mounting and unmounting the SD card early on but toward the end they just froze up the phone. Once we trashed the cards, the phones worked fine. We bought a different brand and no trouble since. I don't know why these red & gray ones have issues but stay away from them.
+
+Rating: 2.0 | Sentiment: Negative
+Review: Got a defective memory card.  Showed only 1 GB instead of the 64 GB.  Returned it for a replacement and never got the replacement!  Got my money back and went to Walmart.
+
+Rating: 2.0 | Sentiment: Negative
+Review: I bought this for my Samsung galaxy s4. I don't know if it is my phone or the card but my phone says it was unexpectedly removed from time to time. My wife's phone doesn't do it as often but still does it. Very fast but unreliable. I have had many sandisk before and this is the only one I have had problems with. I have read that there were some that were poorly made. Thinking I will send it back and give it another chance.
+
+Rating: 1.0 | Sentiment: Negative
+Review: This is one of those basic items that usually just work. In my case, I received one that just did not work. A couple of weeks ago, my phone reported an error and so I reformatted the card and transferred my music back onto it. Unfortunately it failed again two days ago and it won't even format now. I have had good luck with SanDisk before, but this one was not a good experience.
+
+Rating: 1.0 | Sentiment: Negative
+Review: I got the micro sdcard 64gig, I reformated to fat32 and works very well on my galaxy s2 i9100 with no problems at all, thanks:DEDIT: After 7 months of using this memory card, now i tried to format it but it wouldn't, i tried about 5 different methods and none of them worked, i wouldn't recommend buying this one: SanDisk Ultra 64GB MicroSDXC Class 10 UHS Memory Card Speed Up To 30MB/s With Adapter, Frustration-Free Packaging - SDSDQU-064G-AFFP-A. Avoid buying it or you will experience problems in half a year.
+
+Rating: 2.0 | Sentiment: Negative
+Review: I bought 64GB version of the card to use with GoPro Hero 3 black edition.  It didn't work out.  The card worked OK if camera was set to resolution with lower bit rates.  E.g. worked fine in 720p with protune on, or 1080p with protune off.  However, in 1080p with protune on (bitrate is just shy of 6 MB/s in this mode -- much higher then with protune turned off) it was nothing but trouble.  Camera would sometime work, and sometime randomly stop recording for no obvious reason.  I first suspected camera, but testing with different SD cards, it ended up being SanDisk's card that was at fault.  My spare card, an old and cheap 16GB PNY (also class 10), worked just fine under same conditions and with same camera settings.Once it was obvious it was problem with the card, I found people on GoPro's forums that had trouble with this specific card as well (well, you always find these only after you figure it out for yourself, right?).  Anyhow, I did some speed tests with the card by doing simple write of 1GB file full of zeros using Unix dd utility to copy 1GB of zeros from /dev/zero (where else would you find that many zeros ;-) onto a file on the card.  The result was that on average, SanDisk's card would manage about 10.2 MB/s.  Just barely above the bar for class 10 card.  However, that was average over 1GB.  During the write test, the speed was oscillating with many spikes and drops.  Drops were as low as 7MB/s.  Uh.  I thought write speed of class 10 card should never dip below 10 MB/s?  For comparison, my old cheap class 10 PNY card was chugging along at constant 13 MB/s under the same test.  No spikes and no drops in speed.The card will probably work fine in most devices, as bitrates when recording 1080p video are often low enough and/or camera might have huge buffer.  But if you want to use it to record video at high bitrates, and your device doesn't have huge buffer to compensate for speed bumps of this card, you may run into trouble.  Be wary of using it in Hero3 in modes that have higher bit rates (e.g. 1080p with protune enabled).SanDisk's website lists part numbers as SDSDQUI-064G with adapter, and SDSDQUA-064G without adapter.  This conflicts with product description on Amazon.  While this is likely just Amazon not getting product description right again (a bit too common thing), it's interesting to note.[Update Apr 20 2013]:Some numbers from testing the card.  The test is extremely simple.  Write out 1GB of zeros onto the card using standard Unix dd command to read 128KB blocks of zeroes from special device /dev/zero and write it onto the card.  128KB * 8192 = 1GB.  dd displays transfer stats once it finishes.  While dd was running, I run iostat in second terminal displaying 1 second interval stats as a measure of current speed.  This was done on the Mac.  dd command line can be used as-is to repeat test on Linux system, however iostat command is different on Linux and would need to be modified slightly.  I choose 128KB block size, as that seems to be what device drivers merges sequential writes into anyhow.  Using different block sizes, results are comparable.$ dd if=/dev/zero of=test bs=131072 count=81928192+0 records in8192+0 records out1073741824 bytes transferred in 101.578307 secs (10570582 bytes/sec)So, 10 MB/s and all is good? Right? Wrong! iostat running in parallel with above dd command recorded this:$ iostat -d -w 1 disk2disk2KB/t tps MB/s123.11 76 9.12116.61 185 21.04122.94 49 5.88128.00 41 5.12128.00 89 11.11128.00 134 16.73128.00 69 8.61128.00 61 7.62128.00 99 12.36[ ... and so on until dd finishes writing 1GB of zeros to the card ... ]IMO, the last column should never dip under 10MB/s for card labeled class-10.For comparison, same test run against Samsung Pro 64GB micro-SD card:$ dd if=/dev/zero of=test bs=131072 count=81928192+0 records in8192+0 records out1073741824 bytes transferred in 52.869111 secs (20309436 bytes/sec)$ iostat -d -w 1 disk2disk2KB/t tps MB/s125.30 138 16.86117.73 157 18.03123.04 150 18.00128.00 159 19.86128.00 156 19.47126.45 160 19.73128.00 150 18.72128.00 154 19.22128.00 153 19.11[ ... and so on until dd finishes writing 1GB of zeros to the card ... ]So, Samsung is on average 2x faster, but more importantly it's speed is much more constant.  And critically important, it never dips under 10MB/s.
+
+==========================================
+20 RANDOM SAMPLES FOR CLASS: Neutral
+==========================================
+
+Rating: 3.0 | Sentiment: Neutral
+Review: This product works as described.  It's just not super quick.  I would recommend this product, especially, if you get it on sale.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: Picked up this memory card at a great price on a gold box deal. Reputable name, fast card. However, after several months of trying to get my phone to work with the card, formatted it, partitioned it. &#34;mounted&#34; the card, &#34;unmounted the card,&#34; all to no avail.  I realized that this memory card is not compatible with my Samsung SGH-T769 (Galaxy S 4G). No need to get frustrated and try a Sandisk &#34;Ultra&#34; 32GB Class 10 card in the phone. I replaced this card with a &#34;plain&#34; Sandisk 32GB Class 4 card in my phone, it was immediately recognized, formatted and mounted by the Samsung phone.YMMV
+
+Rating: 3.0 | Sentiment: Neutral
+Review: I do not know if the GS3's have issues with reading cards of this size but I eventually had to remove this card and purchase a Transcend 8GB Class 10 card just to check if it was my phone that was the problem. When I got it I opened the packet, and popped it right in. Recognized, was able to start using, taking shots and video and they immediately saved to the card without the hangup my old class 2 card used to have. After a couple of days I noticed that I would take a shot and the phone would give me an error that it could not save to the SD card. You would have to reboot to fix. When scrolling through the gallery on the SD card it would freeze and the app would crash. I moved what I could, formatted the card but the same thing kept happening.Since installing the new Transcend 8GB card I've had no such issues. Maybe its just MY phone but I think there have been enough complaints from GS3 owners to be a little skeptical about this card on their phones.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: The card does all it promises to do, but I have a gripe: the nail-ridge near the outer end of the card is not defined enough, which makes it rather difficult to extract the card from a reader or adapter.This is the first MicroSD card I have that has had this problem.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: Why is you buy a 16GB card and when you install it, you have only 14.8 GB? Exactly where does that 1GB+ I PAID FOR...go to?
+
+Rating: 3.0 | Sentiment: Neutral
+Review: the micro sd works great as described. but beware that the micro sd adapters are faulty. the micro sd will get stuck in the adapter. you will have to carefully rip apart the adapter to get the micro sd out thus damaging the apapter.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: I am using it my camera instead But if you want it on a sum sung, this isn't the one to buy.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: Some reason this card (and a replacement card) did not work with my GoPro Hero 3+.....therefore I could only give the card a 3* instead of a 5......ive also read that many people are having the same problem with ALL brands of micro SD 64 gb cards.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: I was a little disappointed since it came without a box. So, where do I leave the adapter while the card is in the camera?
+
+Rating: 3.0 | Sentiment: Neutral
+Review: I purchased this Micro SD card to add storage to my Acer tablet. Unfortunately the tablet did not recognize the device. After uninstalling the card several times I decided to use it in my Samsung phone and it works fine there.If you are going to buy this product for a tablet, I recommend you do you research and make sure it's compatible.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: I get the occasional dropped frames when using it to record HD video in HD camera. Solid for the 1 couple of weeks. Time will tell.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: SanDisk makes a lot of claims about this card and some of them are questionable. I own two, and while the high-capacity/low-price certainly makes them useful, they're not the answer to all of my recording needs. First of all, do not use this with a GoPro Hero 3 (or later model). Despite SanDisk's claims, these cards cannot handle the demands of true HD recording. GoPro removed it from their list of recommended cards because it caused the cameras to lock up and turn off. Even with myCanon VIXIA HF10 Flash Memory High Definition Camcorder--technology which is over 10 years old--the SanDisk Ultra card does not meet the requirements for shooting in FXP mode (1920x1080, 17Mbps) even though the camera says only a class 4 is required. A firmware update to the GoPro 'fixed' the issue for Hero 3 and Hero 3+ cameras, but it did so by throttling the recording speed for the cards, i.e. lowering the quality of the recording slightly.Those shortcomings aside, the SanDisk Ultra can shoot in XP+ mode (1440 x 1080) on the Vixia HF10 and it works with all of the settings of aContourROAM Waterproof HD 1080P. Is it "water-proof, temperature proof, X-ray proof, shock proof"? I can't say. The ContourROAM is a waterproof camera, so even non-waterproof cards are safe for submersion if they're in the housing. The Ultra has functioned in 10 weather and after being dropped, so there's validity to the claim of it being temperature- and shock-proof. I guess I'll find out whether it's x-ray-proof the next time I go through the airport...
+
+Rating: 3.0 | Sentiment: Neutral
+Review: not sure if it's the card or computer but it only shows up as 32 gig. i tried reformating it and everything and it still says 32gigs.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: had to send it back to SanDisk.  They did replace it at no cost - which is nice - but still ... if I had lost a bunch of data I would have been pretty bummed.  I used it in my phone to store music.  one day i turned on my phone and it said &#34;can't read card&#34;  that was it - i tried putting it in my computer to reformat, wasn't even recognized as a drive at all.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: I find this card seems to frequently stop working altogether and have to be reformatted, or simply re-seated. It's hard to know if this is the fault of the device I use it in (a cellphone), or the card itself, so I can't really hold that against it, but all I can say is that's been my experience with this card, and not others.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: The 64gb version does not seem as reliable as the lower gb versions. I have had to reformat this card twice .. a real nuisance. When its working .. it does well.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: Formatted card with SDFormatter 3.1PC used to test this card Sony vaio C2D sz645 + vaio memory card adapter VGP-MCA20A.h2testw 1.4 test results:Test finished without errors.Writing speed: 6.94 MByte/sReading speed: 12.5 MByte/sH2testw v1.4Android phone Samsung Exhibit 2SDTools test result:9.3MB/s write21.3MB/s readAlso tested write speed with an older model Sandisk usb 2.0 sd card reader and cheap generic unbranded reader, get about same results. I don't have any devices that can handle UHS-1 "ultra" speed of this card. Seems like a class 6 card or none of my gadgets can handle 10MB/s write speed or it's a class 6 card sold as class 10.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: I have a problem with the size of these mini cards --they are hard to hold on to  and get in and out of my drift cameras they get stuck all the time
+
+Rating: 3.0 | Sentiment: Neutral
+Review: I bought this for a Galaxy Note 8.0, and while it functions properly, it is completely useless for my tablet. I can't put movies or books on it, because they are streamed from Google Play, and i can't put apps on it because that is not allowed. Why do they put a $&@?!$@& micro sd slot on a tablet that can't use it for anything but backups- backups i might add that are already in the cloud. Amazon did a great job delivering it, which was a bright spot in the realization that i spent 25 dollars on a chip that is going to do a better job cleaning the dirt out of my grout than helping the memory on my tablet.
+
+Rating: 3.0 | Sentiment: Neutral
+Review: Well, it does work and glad that it is not fake as you would get if you bought from other online stores at $50 a piece. But their max transfer speed is only at 18mb/s not 30 as advertised and I have a very decent desktop with usb3 connector.
+
+==========================================
+20 RANDOM SAMPLES FOR CLASS: Positive
+==========================================
+
+Rating: 5.0 | Sentiment: Positive
+Review: marvelous, I just fixed it into my camera and it automatically recognized it. great storage for my camera to use
+
+Rating: 5.0 | Sentiment: Positive
+Review: Love it, now i have 118GB in my zte supreme, works really well in my phone, it restarted my phone a few times when i first put it in but no problems after that, no idea why it did that, but now i can fit my entire music collection on my android which has reached 94GB of all rock and metal!!!!!!!!!!!! now i can get rid of that damn ugly ass ipod classic!!!
+
+Rating: 5.0 | Sentiment: Positive
+Review: Bought the Astak CM-7200...This memory card works great in that with no hesitation for the video..Great pice too..No problems. Thumbs up!!
+
+Rating: 5.0 | Sentiment: Positive
+Review: What more can be said?  This card is made by the leader in flash memory and was a reasonable price and very fast.
+
+Rating: 5.0 | Sentiment: Positive
+Review: it's very fast micro sd card i use it for my mobile and gopro camera , sandisk is the best ever
+
+Rating: 5.0 | Sentiment: Positive
+Review: I put this baby in my Galaxy Note II, formatted it, and ran an SD card app to test it.  All seems to work well, maxs out my memory.
+
+Rating: 5.0 | Sentiment: Positive
+Review: Best memory I have found for consistency and high speed. Ideal for any modern application, especially high definition video recording.
+
+Rating: 5.0 | Sentiment: Positive
+Review: Shipped fast and worked really well!  I use this just in case I have to take a lot of photos! Loads fast!
+
+Rating: 5.0 | Sentiment: Positive
+Review: I bought this as an expanded/backup memory for my tablet (a Samsung Galaxy Tab 3), and it installs easily, works quickly, and even has a great SanDisk memory app that helps me organize my files and see a visual representation of how much memory is taken and how much is free.It came with an adapter so I can plug it into my computer to transfer files if I want to, which is awesome.  Nothing bad to say about this memory card!
+
+Rating: 5.0 | Sentiment: Positive
+Review: Fast card with the highest capacity you can currently buy in a microSD format. It's probably the fastest microSD of this size also.
+
+Rating: 5.0 | Sentiment: Positive
+Review: never used a micro sd card before, theyre a lot smaller than i thought, smaller than my finger nail. i wrote 150 songs to it from my laptop in about a minute. wrote a 750mb movie in under 3 minutes. glad i bought the class 10 card. the agptek 10" tablet reads from it instantly with no loading. the mobilemate microsd/usb reader works well with it
+
+Rating: 5.0 | Sentiment: Positive
+Review: This memory card works well will my GoPro. It records the video without any stuttering and sputtering. I recommend this and will buy more.
+
+Rating: 5.0 | Sentiment: Positive
+Review: Worked like it is suppose to on my Galaxy S3.  With this memory card now I have over 72 GB of storage!
+
+Rating: 5.0 | Sentiment: Positive
+Review: Got this to shoot in HD. It is working really well so far. It is handling HD recording and playback great.
+
+Rating: 5.0 | Sentiment: Positive
+Review: It's tiny,.. in size, - but provides great storage. Tested and works great with all our BlackBerry Z10 - and Q10 devices.. Just remember to format the memorycard by using the Setup on the phone ... and NOT format using your computer..
+
+Rating: 5.0 | Sentiment: Positive
+Review: I bought this memory card the day I received my Samsung Galaxy S4. It arrived in two days via Prime, plugged it in and formatted. It offers 59.45 GBs of usable space. Being that the card is Class 10, reads are super fast and writes are great. UHS-1 is, sadly, mostly only supported by DSLRs, so most smartphones and devices won't take advantage of the super, super speed, but nonetheless, the card is fast.This card has lots of storage, affordable, transfers and reads fast. I'd recommend this for people who carry a lot of media, such as music and videos.
+
+Rating: 5.0 | Sentiment: Positive
+Review: So, essentially you have about 28 - 29 GB, but it seems to be quite a bit for me. I have yet to use even a quarter of that, and I take pictures every week. I had a problem with how it transferred some videos to my computer once, but that my be because I forgot to format it and prepare my tablet for removal of the SC card.It is definitely surprising how small it is! Be careful not to lose it!
+
+Rating: 5.0 | Sentiment: Positive
+Review: I am using the Fiio X5 and my current 64 GB SD card is full. My library is now bigger than 150 GB and this Sandisk 128 GB card had a price drop to $100 and with free shipping, it was a no-brainer to get it to accommodate all my music files. It worked as advertised and speed can be further improved but then I am limited by the read speed of my player X5. Overall, a good product with the big memory space which filled my needs. Recommended to buy again if there is a discounted price for this card. Else get 2 x 64 GB card, which is still cheaper than a 128 GB SD card.
+
+Rating: 5.0 | Sentiment: Positive
+Review: Bought this for my Hero3. It came with a 16GB card. You will get about 1.5 hrs of video on this card. Great price!
+
+Rating: 4.0 | Sentiment: Positive
+Review: I got this for my Samsung Galaxy S3 when it was on sale. My fairly new internal card reader wasn't able to write to it so I tried 2 different USB adapters and they didn't work either. I installed it in my phone and was able to copy files via USB. It was slow but it worked and is great in the phone.

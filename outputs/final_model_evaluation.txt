@@ -1,0 +1,47 @@
+========================================================
+PRODUCT FEEDBACK SENTIMENT ANALYSIS — FINAL EVALUATION
+========================================================
+
+Holdout test examples were kept separate from training.
+
+Model Build Timestamp: 2026-09-19 19:41:21
+Selected Model: Model B (class_weight='balanced')
+Total Dataset Size: 4955
+Training Set Size (80%): 3964
+Validation Set Size (20%): 991
+
+--- DATASET CLASS DISTRIBUTION ---
+  - Negative: 338 (6.82%)
+  - Neutral: 152 (3.07%)
+  - Positive: 4465 (90.11%)
+
+--- PIPELINE CONFIGURATION ---
+  - TF-IDF Vectorizer: max_features=10000, ngram_range=(1,2), min_df=1 (Fitted on X_train ONLY)
+  - Classifier: LogisticRegression(class_weight='balanced', max_iter=1000, random_state=42)
+
+--- SAME-SPLIT COMPARATIVE MODEL RESULTS ---
+Model A (class_weight=None)     -> Acc: 91.22% | Macro Prec: 0.5598 | Macro Rec: 0.3963 | Macro F1: 0.4201 | Weighted F1: 0.8811
+Model B (class_weight='balanced') -> Acc: 91.62% | Macro Prec: 0.5484 | Macro Rec: 0.5897 | Macro F1: 0.5657 | Weighted F1: 0.9133
+
+--- SELECTED MODEL PERFORMANCE METRICS (MODEL B) ---
+  - Accuracy:          91.62%
+  - Macro Precision:   0.5484
+  - Macro Recall:      0.5897
+  - Macro F1-Score:    0.5657
+  - Weighted F1-Score: 0.9133
+
+--- PER-CLASS PERFORMANCE (MODEL B) ---
+Class        | Precision  | Recall     | F1-Score   | Support 
+------------------------------------------------------------
+Negative     | 0.6310     | 0.7794     | 0.6974     | 68      
+Neutral      | 0.0526     | 0.0333     | 0.0408     | 30      
+Positive     | 0.9617     | 0.9563     | 0.9590     | 893     
+
+--- CONFUSION MATRIX (MODEL B) ---
+Labels: ['Negative', 'Neutral', 'Positive']
+  [53, 4, 11]
+  [6, 1, 23]
+  [25, 14, 854]
+
+--- KNOWN MODEL LIMITATION ---
+Neutral class performance (F1 = 0.0408) remains a major limitation due to the severe dataset imbalance (only 3.07% Neutral reviews) and vocabulary overlap with Positive and Negative classes.

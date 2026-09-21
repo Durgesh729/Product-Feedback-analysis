@@ -1,0 +1,41 @@
+category,text,expected_sentiment,predicted_sentiment,negative_probability,neutral_probability,positive_probability,correct
+Product defects,The product stopped working after two days.,Negative,Negative,0.7804,0.1559,0.0637,True
+Product defects,The device is defective and does not turn on.,Negative,Negative,0.6587,0.1904,0.1509,True
+Product defects,Internal mechanism broke on the first attempt.,Negative,Negative,0.5955,0.1209,0.2836,True
+Product defects,The memory card gets corrupt continuously.,Negative,Positive,0.2364,0.2124,0.5512,False
+Product defects,Product is completely non-functional out of the box.,Negative,Positive,0.2532,0.3589,0.3879,False
+Missing accessories,The charging cable is missing and the charging port is inconvenient.,Negative,Negative,0.9561,0.0175,0.0264,True
+Missing accessories,The charger was not included in the box.,Negative,Negative,0.4336,0.266,0.3004,True
+Missing accessories,Missing adapter and user manual upon opening package.,Negative,Negative,0.4247,0.3577,0.2176,True
+Missing accessories,Package arrived without the promised USB connector cable.,Negative,Neutral,0.1507,0.4295,0.4197,False
+Missing accessories,Key accessories were omitted from the order.,Negative,Positive,0.2581,0.0942,0.6477,False
+Compatibility problems,This product is not compatible with my phone.,Negative,Neutral,0.1938,0.5786,0.2277,False
+Compatibility problems,Incompatible with Windows 11 and keeps disconnecting.,Negative,Positive,0.3958,0.1635,0.4407,False
+Compatibility problems,Does not fit standard USB ports properly.,Negative,Positive,0.1613,0.3569,0.4818,False
+Compatibility problems,Card is rejected by Nintendo Switch console.,Negative,Positive,0.2699,0.2988,0.4313,False
+Compatibility problems,App software crashes when connected to this accessory.,Negative,Positive,0.2734,0.1986,0.528,False
+Poor battery,The battery drains extremely quickly.,Negative,Positive,0.3077,0.0761,0.6162,False
+Poor battery,Battery life is terrible and barely lasts two hours.,Negative,Negative,0.6696,0.1334,0.1969,True
+Poor battery,Takes forever to charge and loses battery rapidly.,Negative,Positive,0.1524,0.2086,0.639,False
+Poor battery,Battery pack overheats while charging.,Negative,Negative,0.5829,0.0742,0.3429,True
+Poor battery,Battery capacity died after three charge cycles.,Negative,Positive,0.3653,0.2625,0.3723,False
+Poor quality,Cheap plastic construction and breaks easily.,Negative,Positive,0.2755,0.1843,0.5401,False
+Poor quality,"Poor quality material, definitely not worth the price.",Negative,Positive,0.1871,0.1186,0.6943,False
+Poor quality,Extremely fragile design and disappointing performance.,Negative,Positive,0.217,0.1818,0.6012,False
+Poor quality,Terrible craftsmanship and feels flimsy.,Negative,Negative,0.3816,0.2712,0.3472,True
+Poor quality,Subpar build quality compared to competitor brands.,Negative,Positive,0.1847,0.1548,0.6606,False
+Delivery complaints,Delivery was delayed by two weeks and package was damaged.,Negative,Neutral,0.2852,0.4558,0.2589,False
+Delivery complaints,Item arrived crushed in a torn envelope.,Negative,Neutral,0.1181,0.5143,0.3676,False
+Delivery complaints,Shipping took way too long and seller ignored messages.,Negative,Positive,0.4156,0.0562,0.5281,False
+Delivery complaints,Box arrived open with items falling out.,Negative,Neutral,0.1108,0.5231,0.3662,False
+Delivery complaints,Wrong item delivered by courier service.,Negative,Positive,0.1481,0.3796,0.4723,False
+Positive product experiences,The product quality is excellent.,Positive,Positive,0.1266,0.0868,0.7866,True
+Positive product experiences,I am very happy with this purchase.,Positive,Positive,0.0727,0.0569,0.8704,True
+Positive product experiences,Works flawlessly and high transfer speeds.,Positive,Positive,0.02,0.069,0.911,True
+Positive product experiences,Fantastic value for money and highly recommended.,Positive,Positive,0.0663,0.0395,0.8942,True
+Positive product experiences,Exceeded my expectations in build and performance.,Positive,Positive,0.1721,0.3918,0.4361,True
+Neutral informational reviews,The package arrived yesterday.,Neutral,Neutral,0.1187,0.5995,0.2818,True
+Neutral informational reviews,The product comes in three colors.,Neutral,Neutral,0.0723,0.6253,0.3024,True
+Neutral informational reviews,The box contains two items.,Neutral,Neutral,0.1024,0.8407,0.0569,True
+Neutral informational reviews,The memory card comes with an SD card adapter.,Neutral,Positive,0.1328,0.1116,0.7556,False
+Neutral informational reviews,The product is available in two sizes.,Neutral,Neutral,0.1418,0.4968,0.3613,True

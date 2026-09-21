@@ -1,0 +1,13 @@
+==================================================
+   MULTI-DOMAIN MODEL CANDIDATE EXPERIMENTS       
+==================================================
+Evaluation Split: Validation Set (30,000 samples, Grouped by product_id)
+All vectorizers fitted STRICTLY on Training Set (140,000 samples).
+
+Experiment Name                                         | Acc     | MacroF1 | Neg F1  | Neu F1  | Pos F1 
+---------------------------------------------------------------------------------------------------------
+Exp 1: Option A (Body Only), Unigram (1,1), LogisticRegression(balanced) | 0.6905  | 0.6578  | 0.7441  | 0.4388  | 0.7905 
+Exp 2: Option A (Body Only), Unigram+Bigram (1,2), LogisticRegression(balanced) | 0.7137  | 0.6784  | 0.7635  | 0.4551  | 0.8168 
+Exp 3: Option B (Title+Body), Unigram (1,1), LogisticRegression(balanced) | 0.7453  | 0.7139  | 0.7890  | 0.5139  | 0.8388 
+Exp 4: Option B (Title+Body), Unigram+Bigram (1,2), LogisticRegression(balanced) | 0.7652  | 0.7316  | 0.8068  | 0.5285  | 0.8593 
+Exp 5: Option B (Title+Body), Unigram+Bigram (1,2), LogisticRegression(None) | 0.7831  | 0.7197  | 0.8299  | 0.4650  | 0.8641 

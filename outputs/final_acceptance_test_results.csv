@@ -1,0 +1,11 @@
+index,input_text,cleaned_text,predicted_sentiment,negative_prob,neutral_prob,positive_prob
+1,The charging cable is missing and the charging port is inconvenient.,charging cable missing charging port inconvenient,Negative,95.61,1.75,2.64
+2,The charger was not included in the box.,charger not included box,Negative,43.36,26.6,30.04
+3,The product stopped working after one week.,product stopped working one week,Negative,63.63,20.82,15.56
+4,The battery drains extremely quickly.,battery drain extremely quickly,Positive,30.77,7.61,61.62
+5,The product quality is excellent.,product quality excellent,Positive,12.66,8.68,78.66
+6,I am very happy with this purchase.,happy purchase,Positive,7.27,5.69,87.04
+7,The package arrived yesterday.,package arrived yesterday,Neutral,11.87,59.95,28.18
+8,The product comes in three colors.,product come three color,Neutral,7.23,62.53,30.24
+9,The product is completely defective.,product completely defective,Negative,50.22,30.89,18.89
+10,I am disappointed with this purchase.,disappointed purchase,Negative,37.31,28.01,34.68

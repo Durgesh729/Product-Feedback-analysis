@@ -1,0 +1,80 @@
+================================================================================
+PRODUCT FEEDBACK SENTIMENT ANALYSIS — FINAL MODEL SELECTION AUDIT REPORT
+================================================================================
+
+1. OVERVIEW & AUDIT OBJECTIVE
+--------------------------------------------------------------------------------
+This report provides an apples-to-apples comparative audit between Model B (Logistic
+Regression with balanced class weights) and Model A (Logistic Regression without class
+weights) trained on the exact clean dataset (4,955 reviews) using the identical 80/20
+stratified train/validation split (random_state=42).
+
+2. DATASET SUMMARY & CLASS DISTRIBUTION
+--------------------------------------------------------------------------------
+- Total Clean Dataset Size: 4,955 samples
+- Training Set (80%): 3,964 samples
+- Validation Set (20%): 991 samples
+- Class Distribution in Full Dataset:
+  * Negative  : 338   (6.82%)
+  * Neutral   : 152   (3.07%)
+  * Positive  : 4,465 (90.11%)
+
+3. SAME-SPLIT COMPARATIVE MODEL PERFORMANCE
+--------------------------------------------------------------------------------
+Metric                 | Model A (class_weight=None)  | Model B (class_weight='balanced')
+-------------------------------------------------------------------------------------
+Accuracy               | 91.22%                       | 91.62%
+Macro Precision        | 0.5598                       | 0.5484
+Macro Recall           | 0.3963                       | 0.5897
+Macro F1-Score         | 0.4201                       | 0.5657
+Weighted F1-Score      | 0.8811                       | 0.9133
+
+4. PER-CLASS PERFORMANCE BREAKDOWN
+--------------------------------------------------------------------------------
+MODEL A (class_weight=None):
+  * Negative : Precision=0.7647, Recall=0.1912, F1=0.3059 (Support=68)
+  * Neutral  : Precision=0.0000, Recall=0.0000, F1=0.0000 (Support=30)
+  * Positive : Precision=0.9148, Recall=0.9978, F1=0.9545 (Support=893)
+
+MODEL B (class_weight='balanced'):
+  * Negative : Precision=0.6310, Recall=0.7794, F1=0.6974 (Support=68)
+  * Neutral  : Precision=0.0526, Recall=0.0333, F1=0.0408 (Support=30)
+  * Positive : Precision=0.9617, Recall=0.9563, F1=0.9590 (Support=893)
+
+5. NEUTRAL-CLASS PERFORMANCE ANALYSIS & LIMITATION
+--------------------------------------------------------------------------------
+The Neutral class F1-score for Model B is 0.0408. Model B does NOT solve the Neutral-class
+problem. Neutral classification remains a major limitation due to three structural factors:
+1. Severe Class Imbalance: Neutral (3-star reviews) represents only 3.07% (152 reviews)
+   of the entire 4,955-sample dataset. In the 20% validation split, only 30 Neutral
+   samples exist.
+2. Vocabulary Overlap: 3-star product reviews naturally contain mixed sentiment
+   phrasing (e.g. 'Good card, but delivery was slow'), sharing TF-IDF feature weights
+   with both Positive (4,465 reviews) and Negative (338 reviews) classes.
+3. Class Weight Impact: Model A without class weights predicts 0 Neutral samples
+   (Precision=0, Recall=0, F1=0). Model B with balanced class weights assigns higher loss
+   penalties to minority classes, detecting occasional Neutral reviews, but precision
+   remains very low (0.0526).
+
+6. FINAL SELECTED MODEL & REASON FOR SELECTION
+--------------------------------------------------------------------------------
+FINAL SELECTION: Model B (Logistic Regression with class_weight='balanced')
+
+REASONS:
+1. Higher Macro F1-Score: Model B achieves a Macro F1 of 0.5657, compared to Model A's 0.4201.
+2. Substantially Better Negative Detection: Model B achieves 77.94% Negative Recall (vs 19.12% for Model A)
+   and a Negative F1 of 0.6974 (vs 0.3059 for Model A).
+3. Minority Class Awareness: Model A predicts zero Neutral reviews and misses 81% of Negative reviews.
+   Model B provides substantially better minority-class detection across the board.
+4. Higher Overall Weighted F1-Score: Model B achieves 0.9133 Weighted F1 vs 0.8811 for Model A.
+
+7. LIMITATIONS OF THE FINAL MODEL
+--------------------------------------------------------------------------------
+1. Neutral Class Low Precision (F1 = 0.0408): The model struggles to reliably isolate Neutral
+   feedback from mixed Positive/Negative review text.
+2. Electronics Domain Specificity: The model is trained on e-commerce memory card reviews.
+   Generalization to non-electronics topics (such as apparel sizing or logistics) is naturally bounded.
+3. Bag-of-Words Boundary: TF-IDF linear classifiers cannot capture complex sub-clause syntax or
+   deep semantic relations without contextual transformer embeddings (BERT).
+
+================================================================================

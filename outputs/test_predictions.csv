@@ -1,0 +1,11 @@
+input_text,domain_status,predicted_sentiment,positive_probability,negative_probability,neutral_probability
+I am not feeling well,Outside Product Feedback Domain,N/A (Out of Domain),0.00%,0.00%,0.00%
+The product quality is excellent and I am very satisfied.,Product Feedback Detected,Positive,78.10%,15.38%,6.52%
+The product stopped working after a few days.,Product Feedback Detected,Negative,4.35%,90.56%,5.08%
+The package arrived yesterday.,Product Feedback Detected,Neutral,21.30%,7.18%,71.52%
+I love this product.,Product Feedback Detected,Positive,74.07%,13.57%,12.37%
+I hate this product.,Product Feedback Detected,Negative,24.72%,58.70%,16.58%
+The product is okay.,Product Feedback Detected,Neutral,24.74%,17.32%,57.95%
+Battery life is terrible.,Product Feedback Detected,Negative,12.06%,83.54%,4.40%
+Battery life is excellent.,Product Feedback Detected,Positive,50.51%,42.74%,6.75%
+This phone arrived yesterday.,Product Feedback Detected,Neutral,13.82%,7.30%,78.88%

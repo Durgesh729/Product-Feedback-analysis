@@ -1,0 +1,87 @@
+================================================================================
+NLP & MACHINE LEARNING CONCEPTS TO KNOW FOR PROJECT VIVA & PRESENTATION
+================================================================================
+
+1. MODEL PROBABILITY VS. ACTUAL CERTAINTY (FACTUAL CONFIDENCE)
+--------------------------------------------------------------------------------
+- Definition: In Logistic Regression, model probabilities are estimated output values produced by applying the sigmoid or softmax function to linear feature logit scores.
+- Key Insight: Model probability represents the statistical confidence of the model within its learned parameter space, NOT human certainty or factual truth. High probability (e.g., 85%) simply means the feature vector closely matches patterns in the training data, not that the prediction is guaranteed to be correct.
+- Terminology Rule: Do not call probability "Confidence Score" or "Fact". Refer to it as "Predicted Class Probability" or "Estimated Model Probability".
+
+2. OUT-OF-DOMAIN INPUT
+--------------------------------------------------------------------------------
+- Definition: Text submitted to a machine learning classifier that lies outside the domain of the training dataset (e.g., submitting personal health statements like "I am not feeling well" to an e-commerce product review classifier).
+- Problem: Supervised ML models lack general world knowledge; they evaluate any string based on vocabulary statistics from training data. Out-of-domain text causes unpredictable, misleading classifications.
+- Solution: Pre-processing Domain Validation to detect out-of-domain text and inform the user transparently.
+
+3. DOMAIN VALIDATION
+--------------------------------------------------------------------------------
+- Definition: An input verification layer placed before machine learning inference that verifies whether an input string conforms to the application's intended domain (e.g., product/customer feedback).
+- Role in Architecture: Domain validation acts as a gateway. If valid product feedback is detected, text proceeds to TF-IDF and Logistic Regression. If out-of-domain, prediction is suppressed and a clear user notification is displayed.
+- Key Rule: Domain validation does NOT replace supervised ML with sentiment rules or medical classifiers. It merely validates input scope.
+
+4. CLASS IMBALANCE
+--------------------------------------------------------------------------------
+- Definition: A dataset condition where certain target classes significantly outnumber others. In e-commerce feedback (`amazon_reviews.csv`), Positive reviews constitute ~90.5%, Negative ~6.6%, and Neutral ~2.9%.
+- Impact: Standard classifiers tend to default to the majority class to maximize raw accuracy.
+- Solution: Using `stratify=y` during train-test split and `class_weight='balanced'` in Logistic Regression to weight minority class samples inversely proportional to their frequencies.
+
+5. NEGATION HANDLING
+--------------------------------------------------------------------------------
+- Definition: Preserving negation words (e.g., "not", "no", "never", "cannot", "don't", "isn't") during stop-word removal.
+- Impact: If stop-words strip "not", phrases like "not feeling well" or "not satisfied" become "feeling well" or "satisfied", inverting sentiment valence.
+- Solution: Retaining negation words allows TF-IDF bigrams (e.g., `not satisfied`, `not working`) to capture negative sentiment accurately.
+
+6. DATASET BIAS
+--------------------------------------------------------------------------------
+- Definition: Systematic skew in training data that reflects specific domain habits, rating tendencies, or word usage patterns of e-commerce reviewers.
+- Impact: Words that are neutral in general language (e.g., "phone", "package", "arrived", "well") may carry positive or negative weights if they co-occur overwhelmingly with 5-star or 1-star ratings in the training corpus.
+
+7. MODEL LIMITATIONS
+--------------------------------------------------------------------------------
+- Scope Boundaries: The model cannot understand human emotion, sarcasm, irony, double negatives, or context outside its training vocabulary.
+- Academic Transparency: A machine-learning model is an empirical function estimator. Its outputs are predictions based on pattern frequency, not authoritative ground-truth facts.
+
+8. TRAINING DATA DEPENDENCY
+--------------------------------------------------------------------------------
+- Principle: Supervised machine learning algorithms learn mapping functions f(X) -> Y strictly bounded by the distribution of features present in dataset X.
+- Implication: Model accuracy and generalization performance depend directly on the diversity, clean labeling, and representative quality of the training corpus.
+
+9. DATA LEAKAGE & HOLDOUT ISOLATION
+--------------------------------------------------------------------------------
+- Definition: Data leakage occurs when information from the evaluation or test dataset is inadvertently included in the training dataset or vectorizer fitting phase.
+- Prevention: Strict isolation requires that test examples exist exclusively in `data/holdout_test.csv` or `data/unseen_sanity_test.csv` and are NEVER included in `clean_training_reviews.csv` or passed to `vectorizer.fit()`.
+
+10. GENERALIZATION BOUNDS OF TF-IDF MODELS
+--------------------------------------------------------------------------------
+- Definition: TF-IDF + Logistic Regression relies on static n-gram feature counts without deep contextual word embeddings (like BERT or Transformers).
+- Boundary: If a word co-occurred 90% of the time with 5-star reviews in the original corpus (e.g., `compatible`, `shipping`, `port`), the linear classifier assigns it a positive weight. It cannot infer sub-clause syntax unless present in n-grams.
+
+11. METRIC SELECTION FOR IMBALANCED DATASETS (MACRO F1 VS ACCURACY)
+--------------------------------------------------------------------------------
+- Definition: Accuracy can be deceptively high (90%+) on imbalanced datasets by predicting only the majority class.
+- Metric Rule: Macro F1-score calculates the unweighted mean of F1-scores across all classes, treating minority classes (Negative and Neutral) equally, making it the primary metric for class-balanced model selection.
+
+12. STRATIFIED GROUP SPLITTING & LEAKAGE CONTROL
+--------------------------------------------------------------------------------
+- Definition: Splitting dataset by a group variable (e.g. `product_id`) ensures all reviews for a given product stay in either Train, Validation, or Test set.
+- Key Insight: Ordinary `GroupShuffleSplit` guarantees group separation but can introduce class distribution skew. Stratified group splitting optimizes group assignment to preserve population sentiment ratios (40/20/40) while strictly eliminating product-level leakage across splits.
+
+13. DUPLICATE TEXT CLASSIFICATION & LABEL NOISE CLEANING
+--------------------------------------------------------------------------------
+- Definition: Analyzing duplicate review texts across three categories:
+  - Category A (Same text, same label): Deduplicated to 1 record to prevent split contamination.
+  - Category B (Same text, conflicting labels): Removed completely to eliminate contradictory label noise.
+  - Category C (Same text, different products): Deduplicated for product-level split isolation.
+
+14. MULTI-DOMAIN EVALUATION & DOMAIN-WISE GENERALIZATION
+--------------------------------------------------------------------------------
+- Definition: Assessing model performance across diverse product domains (`home`, `apparel`, `wireless`, `beauty`, `drugstore`, `kitchen`, `automotive`, `pc`, `electronics`, `sports`, etc.) to confirm factual multi-domain generalization rather than single-category overfitting.
+
+15. STATISTICAL INSTABILITY IN LOW-SAMPLE DOMAINS
+--------------------------------------------------------------------------------
+- Definition: Product categories with very low sample counts (e.g. `personal_care_appliances` with N=11 test reviews) produce volatile, high-variance metrics.
+- Policy Rule: Mark low-count domain metrics as `[STATISTICALLY UNSTABLE]` rather than presenting them as equally reliable to large sample categories.
+
+================================================================================
+

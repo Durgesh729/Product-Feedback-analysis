@@ -1,0 +1,137 @@
+domain,expected_sentiment,review_text,is_qualitative,predicted_sentiment,prob_Negative,prob_Neutral,prob_Positive
+electronics,Positive,The battery life on these noise canceling headphones is phenomenal.,False,Negative,0.5563324246522874,0.1247664073371861,0.3189011680105266
+electronics,Positive,Crisp audio display and smooth refresh rate make this monitor exceptional.,False,Positive,0.2591427333623503,0.34594510301036907,0.39491216362728065
+electronics,Positive,Fast wireless charging pad that works reliably every single night.,False,Neutral,0.1372366206122846,0.4513007768142908,0.4114626025734245
+electronics,Positive,The soundstage on these studio monitors exceeded all my expectations.,False,Positive,0.24872776455300163,0.07526566209613324,0.6760065733508651
+electronics,Positive,Seamless Bluetooth connectivity and incredible bass performance.,False,Positive,0.1506420459721847,0.07435361564922569,0.7750043383785896
+electronics,Negative,The screen cracked after two days and the touch response is completely unresponsive.,False,Negative,0.9086386996060585,0.08346191254831474,0.007899387845626904
+electronics,Negative,Terrible Wi-Fi reception and it constantly disconnects during streaming.,False,Negative,0.9234013641093979,0.06400955009486321,0.01258908579573888
+electronics,Negative,Overheats within ten minutes of light usage and shuts down repeatedly.,False,Negative,0.7583179029119694,0.12278664254497487,0.11889545454305564
+electronics,Negative,The charging port loose pin broke on the first week of purchase.,False,Negative,0.8645828637142351,0.1172677076397113,0.018149428646053654
+electronics,Negative,Low quality speaker with distorted audio and static noise.,False,Negative,0.8019383931749439,0.16906812210059172,0.028993484724464218
+electronics,Neutral,The tablet comes with a standard USB cable and user manual in the box.,False,Positive,0.20603069019457382,0.25400955867936403,0.5399597511260622
+electronics,Neutral,Screen resolution is 1080p and measures 15.6 inches diagonally.,False,Negative,0.5133216844782613,0.30278701274902603,0.18389130277271254
+electronics,Neutral,It features two HDMI ports and one optical audio output jack.,False,Negative,0.47926507200157603,0.31747242180015417,0.20326250619826977
+electronics,Neutral,The device operates on 5 volts DC input power supply.,False,Negative,0.5827206399474312,0.2517475394560103,0.16553182059655844
+electronics,Neutral,Includes a basic plastic carrying case and warranty documentation.,False,Negative,0.3722307858711795,0.3481949370231265,0.27957427710569405
+personal care,Positive,This electric toothbrush leaves my teeth feeling dentist clean every morning.,False,Positive,0.23284669787315015,0.19724586187805637,0.5699074402487935
+personal care,Positive,Super quiet hair dryer that dries my hair in half the usual time.,False,Positive,0.13719194718662797,0.24464646922146077,0.6181615835919113
+personal care,Positive,Very smooth shave with zero skin irritation or razor burn.,False,Positive,0.40016565626473294,0.09425164179221805,0.505582701943049
+personal care,Positive,Great battery runtime on this beard trimmer and easy to clean heads.,False,Positive,0.025035458394377125,0.08643467365465163,0.8885298679509713
+personal care,Positive,Gentle water flosser with adjustable pressure settings that works wonderfully.,False,Positive,0.060057652773839044,0.2184880302916195,0.7214543169345414
+personal care,Negative,The razor blades dull after just one use and pull on facial hair.,False,Negative,0.8170545518729894,0.07451343499954168,0.10843201312746899
+personal care,Negative,The heating element on this curling iron melted the plastic tip.,False,Negative,0.5935802402932183,0.28058065785114455,0.1258391018556372
+personal care,Negative,Battery stopped holding charge after three charges on this shaver.,False,Negative,0.7951717932611407,0.17132817544360746,0.03350003129525184
+personal care,Negative,Extremely loud motor and vibration makes it uncomfortable to hold.,False,Negative,0.7715932934029238,0.17117359631600376,0.057233110281072405
+personal care,Negative,The attachment heads snap off easily and feel flimsy.,False,Neutral,0.21112460709791397,0.624547872980468,0.16432751992161795
+personal care,Neutral,The package includes four replacement brush heads and a travel pouch.,False,Positive,0.08098750875404384,0.04836887761838047,0.8706436136275757
+personal care,Neutral,This hair trimmer runs on two AA batteries and has a LED indicator.,False,Negative,0.49515596573717313,0.2618175907851693,0.24302644347765767
+personal care,Neutral,The device dimensions are 7 inches by 2 inches by 1.5 inches.,False,Neutral,0.4165048992149732,0.45696847064100643,0.12652663014402035
+personal care,Neutral,Contains stainless steel blades and a washable waterproof housing.,False,Neutral,0.2554669472405147,0.5049583138072635,0.2395747389522217
+personal care,Neutral,Operates at two distinct speed levels selected via a side toggle switch.,False,Neutral,0.18580960984862588,0.4102591510641642,0.40393123908720996
+kitchen,Positive,Blends frozen fruits into smooth smoothies in seconds effortlessly.,False,Negative,0.41788831573859253,0.25148706687423644,0.330624617387171
+kitchen,Positive,Heavy duty cast iron skillet that retains heat evenly across the surface.,False,Positive,0.2616470673665466,0.3249545616984982,0.4133983709349553
+kitchen,Positive,Nonstick coating works amazingly well and cleans up with a simple wipe.,False,Positive,0.025339263636487665,0.20518341105739743,0.7694773253061148
+kitchen,Positive,Sharp chef knife that cuts through meats and vegetables effortlessly.,False,Positive,0.21097226797897403,0.2526035268203587,0.5364242052006672
+kitchen,Positive,The pressure cooker seals perfectly and cooks meals in record time.,False,Positive,0.05320282097091597,0.21955319519864266,0.7272439838304414
+kitchen,Negative,The nonstick layer started peeling into our food after two weeks of hand washing.,False,Negative,0.6426191829784015,0.2838371217907425,0.07354369523085588
+kitchen,Negative,Glass lid shattered under normal stovetop heat producing dangerous shards.,False,Negative,0.6016565345950415,0.2980988227318097,0.10024464267314875
+kitchen,Negative,Blender motor smoked and burnt out on the first attempt to crush ice.,False,Negative,0.8057361922628211,0.13962569199117114,0.05463811574600762
+kitchen,Negative,Coffee maker leaks water from the bottom reservoir onto the counter.,False,Negative,0.623623456451564,0.1617048243221445,0.21467171922629155
+kitchen,Negative,Can opener gears slipped and jammed completely on the first tin.,False,Negative,0.8498470946391307,0.0633267129678108,0.08682619239305861
+kitchen,Neutral,The kettle holds 1.7 liters of liquid and features auto shutoff.,False,Positive,0.19260367725458263,0.22461639518118667,0.5827799275642307
+kitchen,Neutral,Made of 304 grade stainless steel with a brushed metallic finish.,False,Negative,0.48744204592342877,0.315924867114583,0.1966330869619883
+kitchen,Neutral,Includes three measuring cups and two silicone spatulas.,False,Neutral,0.18307599955799683,0.669127400794237,0.1477965996477661
+kitchen,Neutral,Dishwasher safe cookware set rated for up to 400 degrees Fahrenheit.,False,Positive,0.37301064667273354,0.23101324795447623,0.39597610537279027
+kitchen,Neutral,Measures 12 inches long by 8 inches wide and weighs 2 pounds.,False,Neutral,0.3615014948005535,0.41319021680063156,0.22530828839881498
+apparel,Positive,Super comfortable cotton fabric with perfect fit and great stitching quality.,False,Positive,0.0005815550228923646,0.010402060182506624,0.989016384794601
+apparel,Positive,Warm fleece lining that keeps me cozy during cold winter runs.,False,Positive,0.07771321658774219,0.10924796364681928,0.8130388197654387
+apparel,Positive,Durable denim jeans that retain their color and shape after multiple washes.,False,Positive,0.1538479464637917,0.35511189576228047,0.49104015777392784
+apparel,Positive,Breathable mesh material that keeps feet cool during long workouts.,False,Positive,0.07545547834112411,0.1644261541762976,0.7601183674825782
+apparel,Positive,Elegant dress fit that matches the size chart exactly as described.,False,Positive,0.007580753246080855,0.022855088200707245,0.9695641585532118
+apparel,Negative,Shirt shrunk two sizes after a single cold water wash.,False,Negative,0.6680477865949217,0.2696345455277149,0.06231766787736346
+apparel,Negative,The zipper tore away from the fabric on the first wear.,False,Negative,0.6554010636582202,0.3005851473582235,0.04401378898355645
+apparel,Negative,Colors faded completely into a dull grey after one machine wash.,False,Negative,0.6954990835796315,0.26634041324639435,0.038160503173974215
+apparel,Negative,Itchy cheap material that feels uncomfortable against the skin.,False,Negative,0.7969791387779517,0.17951996905875098,0.023500892163297236
+apparel,Negative,Seams unravelled around the armpits after light casual walking.,False,Negative,0.7148801854741079,0.1583571973720454,0.12676261715384662
+apparel,Neutral,The sweater is composed of 80 percent cotton and 20 percent polyester.,False,Negative,0.40298830803916774,0.32552554537617606,0.2714861465846562
+apparel,Neutral,Available in sizes Small through Extra Large in neutral gray color.,False,Positive,0.3243531120253508,0.22470427299382578,0.4509426149808235
+apparel,Neutral,Features two side pockets and a standard front button closure.,False,Neutral,0.28146612540023225,0.43238744687147984,0.286146427728288
+apparel,Neutral,Washing instructions recommend cold machine wash with mild detergent.,False,Positive,0.15071097352819404,0.22765054009400051,0.6216384863778055
+apparel,Neutral,Garment weight is approximately 350 grams with ribbed cuffs.,False,Neutral,0.3306154280658031,0.40695558432943896,0.2624289876047578
+automotive,Positive,Bright LED headlight bulbs that significantly improve night driving visibility.,False,Positive,0.2837891360347664,0.1191461924668059,0.5970646714984277
+automotive,Positive,Heavy duty floor mats that trap dirt and fit the car footwells perfectly.,False,Positive,0.1589342815177366,0.10266014482031938,0.738405573661944
+automotive,Positive,Smooth wiper blades that clear heavy rain without squeaking or streaking.,False,Positive,0.20848870492512606,0.32187417840930943,0.4696371166655647
+automotive,Positive,Compact tire inflator that pumped up my flat tire quickly and quietly.,False,Positive,0.20083724750776377,0.19366008360954626,0.6055026688826899
+automotive,Positive,High quality car wax that leaves a deep glossy protective shine.,False,Positive,0.04779947242764428,0.1743311612597682,0.7778693663125875
+automotive,Negative,Oil filter threading was stripped causing a severe engine leak.,False,Negative,0.6770498846566908,0.20811606396072596,0.11483405138258315
+automotive,Negative,Car battery failed completely after only one month of normal driving.,False,Negative,0.8598566720037853,0.1369273090034343,0.003216018992780391
+automotive,Negative,Brake pads produced unbearable squealing noise and excessive dust.,False,Neutral,0.3789736469817584,0.4316926661620608,0.18933368685618088
+automotive,Negative,Dash cam video recorded corrupted unplayable files during driving.,False,Negative,0.48408547068743635,0.14418464450346252,0.371729884809101
+automotive,Negative,Seat covers ripped along the elastic seams while being installed.,False,Negative,0.6828876345495444,0.2091152354233004,0.10799713002715539
+automotive,Neutral,Standard 12 volt car accessory plug with an inline 10 amp fuse.,False,Positive,0.4014045957542149,0.1502133452066495,0.44838205903913564
+automotive,Neutral,Fits standard 15 inch wheel rims and includes mounting hardware.,False,Positive,0.2462089298182621,0.18369086447542562,0.5701002057063123
+automotive,Neutral,Synthetic motor oil meeting SAE 5W-30 viscosity specifications.,False,Negative,0.5844670362620551,0.3257075635464917,0.08982540019145316
+automotive,Neutral,The package contains two microfiber cleaning cloths and one applicator pad.,False,Negative,0.5018541511679253,0.2665704101348957,0.23157543869717895
+automotive,Neutral,Designed for OBD2 protocol vehicle diagnostic ports.,False,Negative,0.4040817286361039,0.29690956242821553,0.2990087089356806
+beauty,Positive,Hydrating face moisturizer that absorbs quickly without feeling greasy.,False,Positive,0.13298340062278563,0.13501815103951945,0.731998448337695
+beauty,Positive,Vibrant lipstick color that stays intact all day without smudging.,False,Positive,0.07781977898707149,0.29892026216969897,0.6232599588432296
+beauty,Positive,Restorative hair serum that eliminated frizz and added healthy shine.,False,Positive,0.05719179153240221,0.2451643030112291,0.6976439054563687
+beauty,Positive,Gentle cleansing foam that leaves skin feeling refreshed and soft.,False,Positive,0.1341352384152238,0.1584778190685413,0.7073869425162349
+beauty,Positive,Excellent foundation coverage that blends smoothly with natural skin tone.,False,Positive,0.018190193409036826,0.1814017922976507,0.8004080142933125
+beauty,Negative,Caused severe skin redness and allergic breakout within hours.,False,Negative,0.7740222090503274,0.1767980269472832,0.04917976400238946
+beauty,Negative,Mascara clumpy application that flaked off into eyes throughout the day.,False,Negative,0.5603741830492383,0.2968466662507842,0.14277915069997768
+beauty,Negative,Strong unpleasant chemical perfume scent that triggered severe headaches.,False,Negative,0.5493291695846605,0.3019269439025024,0.14874388651283704
+beauty,Negative,Nail polish peeled off in full sheets within hours of application.,False,Negative,0.4826671451952598,0.43328535895499076,0.08404749584974955
+beauty,Negative,Eye shadow container arrived completely crushed with powder spilled everywhere.,False,Negative,0.7490095577386253,0.1671553189237546,0.08383512333762015
+beauty,Neutral,Formulated without parabens or sulfates in a 50ml glass jar.,False,Positive,0.32724547213572824,0.2502292094033419,0.4225253184609297
+beauty,Neutral,Product contains hyaluronic acid and vitamin C as active ingredients.,False,Negative,0.45420245314906127,0.22245122928629518,0.3233463175646436
+beauty,Neutral,Net weight is 1.7 ounces with a pump dispenser nozzle.,False,Positive,0.1881370958148556,0.3588991619320903,0.4529637422530541
+beauty,Neutral,Expiration date is stamped on the bottom of the outer cardboard box.,False,Neutral,0.14297048024779405,0.7653731230384893,0.09165639671371663
+beauty,Neutral,Apply twice daily to clean skin using light upward strokes.,False,Positive,0.16188315300850858,0.18885067348323697,0.6492661735082543
+home,Positive,Ultra soft bed sheets that feel like staying in a luxury hotel.,False,Positive,0.3381920993944578,0.31422322266161945,0.3475846779439227
+home,Positive,Powerful vacuum cleaner that picked up all stubborn pet hair effortlessly.,False,Positive,0.14290574872589493,0.32660793630796714,0.530486314966138
+home,Positive,Sturdy bookshelf that assembled easily with clear concise instructions.,False,Positive,0.033545300491298086,0.1566407450361649,0.809813954472537
+home,Positive,Blackout curtains that block 100 percent of morning sunlight effectively.,False,Positive,0.2192945108798572,0.27946280115269395,0.5012426879674488
+home,Positive,Quiet room air purifier that noticeably reduced dust and allergies.,False,Positive,0.05726807006385043,0.08501865147825745,0.8577132784578921
+home,Negative,Desk leg collapsed under light weight causing computer monitor to fall.,False,Negative,0.427787792920666,0.35238766712516767,0.21982453995416634
+home,Negative,Vacuum cleaner lost all suction power on the third day of use.,False,Negative,0.6711641198094671,0.18961811469333945,0.13921776549719342
+home,Negative,Curtain rod bent under the weight of light fabric drapery.,False,Neutral,0.32984162119173427,0.45582555138287695,0.21433282742538892
+home,Negative,Cheap particle board emitted foul chemical fumes for weeks.,False,Negative,0.7420450662483467,0.21780851336352017,0.040146420388133104
+home,Negative,Mattress sagged significantly in the middle after two weeks.,False,Negative,0.8247010519094734,0.13935565168289357,0.03594329640763293
+home,Neutral,The floor lamp stands 60 inches tall and uses a standard E26 bulb.,False,Neutral,0.2022135731968619,0.5418058740638629,0.25598055273927517
+home,Neutral,Constructed from engineered wood with an oak veneer finish.,False,Negative,0.4783947583039233,0.14474217970555533,0.37686306199052133
+home,Neutral,"Set includes one fitted sheet, one flat sheet, and two pillowcases.",False,Negative,0.45264251697116553,0.370837702054692,0.1765197809741425
+home,Neutral,Operates on 120 volt AC household electrical power outlet.,False,Negative,0.45072303974904104,0.24362016272784628,0.30565679752311264
+home,Neutral,Dimensions are 36 inches long by 18 inches deep by 30 inches high.,False,Neutral,0.26656814630256537,0.4169304704813391,0.31650138321609567
+sports,Positive,Durable yoga mat with superior floor grip that does not slip at all.,False,Negative,0.4768042123634892,0.2054864267877718,0.31770936084873896
+sports,Positive,High quality resistance bands that withstand heavy tension workouts easily.,False,Positive,0.07173652040759981,0.08179414784564129,0.8464693317467589
+sports,Positive,Comfortable running shoes with plush cushioning and great arch support.,False,Positive,0.019419340362886308,0.0800753173580245,0.9005053422790892
+sports,Positive,Sturdy mountain bike helmet with easy adjustment dial and light weight.,False,Positive,0.061889582846225685,0.1329910335907458,0.8051193835630286
+sports,Positive,Waterproof camping tent that stayed completely dry through a rainstorm.,False,Positive,0.19861026591722372,0.3208175839116642,0.4805721501711122
+sports,Negative,Resistance band snapped during first stretch hitting my arm hard.,False,Negative,0.6346564717638574,0.19319973146130484,0.17214379677483782
+sports,Negative,Basketball lost air pressure within two hours of inflation repeatedly.,False,Negative,0.8823814873193881,0.08711222065857543,0.030506292022036467
+sports,Negative,Trekking pole lock slipped causing it to collapse while hiking uphill.,False,Negative,0.5482295913727938,0.27215560992289767,0.1796147987043085
+sports,Negative,Goggles fogged up instantly and leaked pool water into eyes.,False,Negative,0.7973930561904126,0.1149774612681695,0.08762948254141792
+sports,Negative,Dumbbell coating cracked exposing rusted iron underneath upon arrival.,False,Negative,0.7849071931458979,0.18425767884736635,0.03083512800673599
+sports,Neutral,The water bottle has a 32 ounce capacity with volume markers.,False,Positive,0.23775331585803552,0.20633228426120612,0.5559143998807584
+sports,Neutral,Yoga block measures 9 inches by 6 inches by 4 inches in size.,False,Negative,0.4523911091917142,0.32700161240636005,0.22060727840192565
+sports,Neutral,Made from high density EVA foam material weighing 0.5 pounds.,False,Negative,0.46461054840633,0.23370770468615812,0.301681746907512
+sports,Neutral,Includes a nylon carrying strap and mesh storage bag.,False,Positive,0.18775927365328665,0.1059508031337435,0.7062899232129698
+sports,Neutral,Suitable for indoor gym exercise and outdoor fitness training.,False,Positive,0.2275637561500857,0.2342379824341826,0.5381982614157318
+grocery,Positive,Rich dark roast coffee beans with incredible fresh aroma and flavor.,False,Positive,0.12771102612422702,0.1258255271123701,0.7464634467634029
+grocery,Positive,Crisp delicious organic granola with wholesome nuts and dried berries.,False,Positive,0.10950200699307472,0.19147912534989792,0.6990188676570274
+grocery,Positive,Authentic extra virgin olive oil with rich pepper notes and great taste.,False,Positive,0.12688474479197595,0.10878299524567865,0.7643322599623456
+grocery,Positive,Delicious dark chocolate bars with smooth texture and rich cocoa content.,False,Positive,0.1320360079796662,0.170717301807222,0.6972466902131118
+grocery,Positive,Fresh herbal tea bags that brew a soothing comforting cup every time.,False,Positive,0.19470623115659913,0.19624568005150012,0.6090480887919008
+grocery,Negative,Package arrived completely expired by three months with moldy contents.,False,Negative,0.8248301481301661,0.1646174638228833,0.01055238804695049
+grocery,Negative,Stale rock hard cookies that tasted completely rancid upon opening.,False,Negative,0.8830978777666997,0.08701181141377513,0.029890310819525073
+grocery,Negative,Canned goods arrived crushed and leaking inside the shipping box.,False,Neutral,0.32908906353529505,0.6087141239263719,0.06219681253833291
+grocery,Negative,Bland flavorless soup mix containing excessive salt and artificial taste.,False,Positive,0.2619185444777121,0.33080458947630764,0.4072768660459802
+grocery,Negative,Bag had a tear spilling loose grains all over the outer box.,False,Negative,0.5183497712669193,0.4187964475507526,0.06285378118232803
+grocery,Neutral,Contains 12 individually wrapped single serve snack packets.,False,Neutral,0.1223462002656374,0.6539808288378227,0.22367297089653992
+grocery,Neutral,Net weight 16 ounces certified organic by USDA guidelines.,False,Positive,0.32105110809925436,0.21491159667373086,0.4640372952270149
+grocery,Neutral,Nutrition facts report 150 calories and 3 grams of sugar per serving.,False,Negative,0.44065002038511275,0.21069788907517653,0.34865209053971075
+grocery,Neutral,Store in a cool dry place away from direct sunlight exposure.,False,Positive,0.2006197783146709,0.27369300191578694,0.5256872197695421
+grocery,Neutral,"Ingredients include whole oats, almonds, honey, and natural vanilla.",False,Positive,0.21922876549315723,0.31105522702305194,0.4697160074837907
+personal care,Negative,The angle provided in this interdental brush is not accurate. It hurts the gums. The bristle pin length is very short for pre molar and molar teeth. So difficult clean teeth from one side. Poor quality plastic is used.,True,Negative,0.8460870230989146,0.13271263294975583,0.021200343951329574

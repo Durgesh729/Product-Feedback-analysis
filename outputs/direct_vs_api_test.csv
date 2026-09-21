@@ -1,0 +1,5 @@
+review_text,direct_pred,api_sim_pred,match,prob_Negative,prob_Neutral,prob_Positive
+The battery life on this laptop is incredible and lasts all day.,Positive,Positive,True,0.1428551930409879,0.07536834243952215,0.78177646451949
+"Average product, nothing special but works fine.",Neutral,Neutral,True,0.009564920517638888,0.9309214692223917,0.059513610259969325
+"Complete waste of money, stopped working within one hour of opening.",Negative,Negative,True,0.9867375995205295,0.011936152085271419,0.0013262483941990225
+The angle provided in this interdental brush is not accurate. It hurts the gums.,Negative,Negative,True,0.8047948251326704,0.13564511231907267,0.05956006254825689

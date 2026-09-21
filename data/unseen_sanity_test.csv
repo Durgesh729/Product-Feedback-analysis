@@ -1,0 +1,41 @@
+category,text,expected_sentiment
+Product defects,The product stopped working after two days.,Negative
+Product defects,The device is defective and does not turn on.,Negative
+Product defects,Internal mechanism broke on the first attempt.,Negative
+Product defects,The memory card gets corrupt continuously.,Negative
+Product defects,Product is completely non-functional out of the box.,Negative
+Missing accessories,The charging cable is missing and the charging port is inconvenient.,Negative
+Missing accessories,The charger was not included in the box.,Negative
+Missing accessories,Missing adapter and user manual upon opening package.,Negative
+Missing accessories,Package arrived without the promised USB connector cable.,Negative
+Missing accessories,Key accessories were omitted from the order.,Negative
+Compatibility problems,This product is not compatible with my phone.,Negative
+Compatibility problems,Incompatible with Windows 11 and keeps disconnecting.,Negative
+Compatibility problems,Does not fit standard USB ports properly.,Negative
+Compatibility problems,Card is rejected by Nintendo Switch console.,Negative
+Compatibility problems,App software crashes when connected to this accessory.,Negative
+Poor battery,The battery drains extremely quickly.,Negative
+Poor battery,Battery life is terrible and barely lasts two hours.,Negative
+Poor battery,Takes forever to charge and loses battery rapidly.,Negative
+Poor battery,Battery pack overheats while charging.,Negative
+Poor battery,Battery capacity died after three charge cycles.,Negative
+Poor quality,Cheap plastic construction and breaks easily.,Negative
+Poor quality,"Poor quality material, definitely not worth the price.",Negative
+Poor quality,Extremely fragile design and disappointing performance.,Negative
+Poor quality,Terrible craftsmanship and feels flimsy.,Negative
+Poor quality,Subpar build quality compared to competitor brands.,Negative
+Delivery complaints,Delivery was delayed by two weeks and package was damaged.,Negative
+Delivery complaints,Item arrived crushed in a torn envelope.,Negative
+Delivery complaints,Shipping took way too long and seller ignored messages.,Negative
+Delivery complaints,Box arrived open with items falling out.,Negative
+Delivery complaints,Wrong item delivered by courier service.,Negative
+Positive product experiences,The product quality is excellent.,Positive
+Positive product experiences,I am very happy with this purchase.,Positive
+Positive product experiences,Works flawlessly and high transfer speeds.,Positive
+Positive product experiences,Fantastic value for money and highly recommended.,Positive
+Positive product experiences,Exceeded my expectations in build and performance.,Positive
+Neutral informational reviews,The package arrived yesterday.,Neutral
+Neutral informational reviews,The product comes in three colors.,Neutral
+Neutral informational reviews,The box contains two items.,Neutral
+Neutral informational reviews,The memory card comes with an SD card adapter.,Neutral
+Neutral informational reviews,The product is available in two sizes.,Neutral

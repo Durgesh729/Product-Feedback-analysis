@@ -1,0 +1,201 @@
+==================================================
+       MULTI-DOMAIN DATASET AUDIT REPORT          
+==================================================
+Source Dataset: train.csv
+1. Total Rows: 200000
+2. Total Columns: 8
+
+3. Column Data Types:
+   - review_id: object
+   - product_id: object
+   - reviewer_id: object
+   - stars: int64
+   - review_body: object
+   - review_title: object
+   - language: object
+   - product_category: object
+
+4. Missing Values:
+   - review_id: 0
+   - product_id: 0
+   - reviewer_id: 0
+   - stars: 0
+   - review_body: 0
+   - review_title: 33
+   - language: 0
+   - product_category: 0
+
+5. Empty / Whitespace-only Strings:
+   - review_id: 0
+   - product_id: 0
+   - reviewer_id: 0
+   - review_body: 0
+   - review_title: 0
+   - language: 0
+   - product_category: 0
+
+6. Invalid Star Values Count: 0
+7. Language Distribution: {'en': 200000}
+8. Unique Review IDs: 200000 (Total rows: 200000)
+9. Unique Product IDs: 185541
+10. Unique Reviewer IDs: 196745
+11. Duplicate Complete Rows: 0
+12. Duplicate review_body Values: 574
+13. Duplicate review_title Values: 62565
+
+14. Product Reviews per Product Statistics:
+   - mean: 1.0779
+   - std: 0.3013
+   - min: 1
+   - max: 6
+   - median: 1.0000
+   - q25: 1.0000
+   - q75: 1.0000
+
+15. Reviews per Reviewer Statistics:
+   - mean: 1.0165
+   - std: 0.1341
+   - min: 1
+   - max: 5
+   - median: 1.0000
+   - q25: 1.0000
+   - q75: 1.0000
+
+16. Review Body Text Length Distribution:
+   - char_mean: 178.8463
+   - char_std: 179.6278
+   - char_min: 15
+   - char_max: 3908
+   - char_median: 125.0000
+   - word_mean: 34.1140
+   - word_std: 34.2011
+   - word_min: 1
+   - word_max: 769
+   - word_median: 24.0000
+
+17. Review Title Text Length Distribution:
+   - char_mean: 24.2038
+   - char_std: 17.7809
+   - char_min: 0
+   - char_max: 128
+   - char_median: 19.0000
+   - word_mean: 4.5258
+   - word_std: 3.4637
+   - word_min: 0
+   - word_max: 32
+   - word_median: 3.0000
+
+18. Product Category Distribution:
+   - home                      :  17679 ( 8.84%)
+   - apparel                   :  15951 ( 7.98%)
+   - wireless                  :  15717 ( 7.86%)
+   - other                     :  13418 ( 6.71%)
+   - beauty                    :  12091 ( 6.05%)
+   - drugstore                 :  11730 ( 5.87%)
+   - kitchen                   :  10382 ( 5.19%)
+   - toy                       :   8745 ( 4.37%)
+   - sports                    :   8277 ( 4.14%)
+   - automotive                :   7506 ( 3.75%)
+   - lawn_and_garden           :   7327 ( 3.66%)
+   - home_improvement          :   7136 ( 3.57%)
+   - pet_products              :   7082 ( 3.54%)
+   - digital_ebook_purchase    :   6749 ( 3.37%)
+   - pc                        :   6401 ( 3.20%)
+   - electronics               :   6186 ( 3.09%)
+   - office_product            :   5521 ( 2.76%)
+   - shoes                     :   5197 ( 2.60%)
+   - grocery                   :   4730 ( 2.37%)
+   - book                      :   3756 ( 1.88%)
+   - baby_product              :   3150 ( 1.57%)
+   - furniture                 :   2984 ( 1.49%)
+   - jewelry                   :   2747 ( 1.37%)
+   - camera                    :   2139 ( 1.07%)
+   - industrial_supplies       :   1994 ( 1.00%)
+   - digital_video_download    :   1364 ( 0.68%)
+   - luggage                   :   1328 ( 0.66%)
+   - musical_instruments       :   1102 ( 0.55%)
+   - video_games               :    775 ( 0.39%)
+   - watch                     :    761 ( 0.38%)
+   - personal_care_appliances  :     75 ( 0.04%)
+
+19. Star Distribution:
+   - Star 1:  40000 (20.00%)
+   - Star 2:  40000 (20.00%)
+   - Star 3:  40000 (20.00%)
+   - Star 4:  40000 (20.00%)
+   - Star 5:  40000 (20.00%)
+
+20. Derived Sentiment Distribution (1-2: Neg, 3: Neu, 4-5: Pos):
+   - Negative  :  80000 (40.00%)
+   - Positive  :  80000 (40.00%)
+   - Neutral   :  40000 (20.00%)
+
+21. Category x Sentiment Distribution:
+   Category                   | Negative | Neutral  | Positive
+   ----------------------------------------------------------
+   apparel                    | 5967     | 3849     | 6135    
+   automotive                 | 3072     | 1433     | 3001    
+   baby_product               | 1149     | 685      | 1316    
+   beauty                     | 5214     | 2443     | 4434    
+   book                       | 1120     | 792      | 1844    
+   camera                     | 867      | 384      | 888     
+   digital_ebook_purchase     | 1111     | 1375     | 4263    
+   digital_video_download     | 607      | 271      | 486     
+   drugstore                  | 4785     | 2344     | 4601    
+   electronics                | 2791     | 1056     | 2339    
+   furniture                  | 1194     | 665      | 1125    
+   grocery                    | 2200     | 933      | 1597    
+   home                       | 6819     | 3615     | 7245    
+   home_improvement           | 2860     | 1332     | 2944    
+   industrial_supplies        | 813      | 356      | 825     
+   jewelry                    | 1104     | 555      | 1088    
+   kitchen                    | 4057     | 1970     | 4355    
+   lawn_and_garden            | 3282     | 1369     | 2676    
+   luggage                    | 423      | 285      | 620     
+   musical_instruments        | 418      | 200      | 484     
+   office_product             | 2167     | 1023     | 2331    
+   other                      | 5241     | 2633     | 5544    
+   pc                         | 2801     | 1131     | 2469    
+   personal_care_appliances   | 35       | 14       | 26      
+   pet_products               | 2978     | 1516     | 2588    
+   shoes                      | 1857     | 1210     | 2130    
+   sports                     | 2991     | 1666     | 3620    
+   toy                        | 3597     | 1731     | 3417    
+   video_games                | 360      | 141      | 274     
+   watch                      | 302      | 171      | 288     
+   wireless                   | 7818     | 2852     | 5047    
+
+22. Category x Star Distribution:
+   Category                   | 1 Star | 2 Star | 3 Star | 4 Star | 5 Star
+   --------------------------------------------------------------------
+   apparel                    | 2457   | 3510   | 3849   | 3595   | 2540  
+   automotive                 | 1674   | 1398   | 1433   | 1509   | 1492  
+   baby_product               | 513    | 636    | 685    | 617    | 699   
+   beauty                     | 2694   | 2520   | 2443   | 2140   | 2294  
+   book                       | 535    | 585    | 792    | 723    | 1121  
+   camera                     | 477    | 390    | 384    | 427    | 461   
+   digital_ebook_purchase     | 302    | 809    | 1375   | 2613   | 1650  
+   digital_video_download     | 291    | 316    | 271    | 276    | 210   
+   drugstore                  | 2520   | 2265   | 2344   | 2243   | 2358  
+   electronics                | 1480   | 1311   | 1056   | 1081   | 1258  
+   furniture                  | 559    | 635    | 665    | 614    | 511   
+   grocery                    | 1236   | 964    | 933    | 695    | 902   
+   home                       | 3308   | 3511   | 3615   | 3520   | 3725  
+   home_improvement           | 1466   | 1394   | 1332   | 1397   | 1547  
+   industrial_supplies        | 439    | 374    | 356    | 398    | 427   
+   jewelry                    | 526    | 578    | 555    | 557    | 531   
+   kitchen                    | 2027   | 2030   | 1970   | 1990   | 2365  
+   lawn_and_garden            | 1778   | 1504   | 1369   | 1270   | 1406  
+   luggage                    | 178    | 245    | 285    | 310    | 310   
+   musical_instruments        | 214    | 204    | 200    | 244    | 240   
+   office_product             | 1112   | 1055   | 1023   | 1096   | 1235  
+   other                      | 2695   | 2546   | 2633   | 2819   | 2725  
+   pc                         | 1550   | 1251   | 1131   | 1200   | 1269  
+   personal_care_appliances   | 19     | 16     | 14     | 9      | 17    
+   pet_products               | 1417   | 1561   | 1516   | 1264   | 1324  
+   shoes                      | 763    | 1094   | 1210   | 1162   | 968   
+   sports                     | 1442   | 1549   | 1666   | 1823   | 1797  
+   toy                        | 1862   | 1735   | 1731   | 1626   | 1791  
+   video_games                | 213    | 147    | 141    | 144    | 130   
+   watch                      | 153    | 149    | 171    | 167    | 121   
+   wireless                   | 4100   | 3718   | 2852   | 2471   | 2576  

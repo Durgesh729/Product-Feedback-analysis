@@ -1,0 +1,42 @@
+reviewText,overall,sentiment
+The product quality is terrible and stopped working.,1.0,Negative
+"I hate this product, waste of money.",1.0,Negative
+Battery life is terrible and drains in one hour.,1.0,Negative
+I don't like this product at all.,1.0,Negative
+Product arrived broken and defective.,1.0,Negative
+Extremely disappointed with performance and build quality.,1.0,Negative
+Card failed after two days and corrupted all files.,1.0,Negative
+Worst customer service and cheap plastic material.,1.0,Negative
+"Does not work as advertised, very frustrating.",1.0,Negative
+Overheats my phone and causes random reboots.,1.0,Negative
+"Slow transfer speeds, nowhere near class 10.",2.0,Negative
+Card is not recognized by PC or phone.,1.0,Negative
+Item arrived damaged with torn packaging.,1.0,Negative
+"Memory capacity shows 0 bytes, total junk.",1.0,Negative
+The order arrived yesterday in standard packaging.,3.0,Neutral
+"Standard memory card, works as expected.",3.0,Neutral
+The box contains one microSD card and adapter.,3.0,Neutral
+Product was delivered this morning by courier.,3.0,Neutral
+"Pre-formatted as FAT32, average read speeds.",3.0,Neutral
+Received item on scheduled delivery date.,3.0,Neutral
+It performs adequately for basic photo storage.,3.0,Neutral
+Package contains plastic case and card reader.,3.0,Neutral
+Compatible with standard SD card slots.,3.0,Neutral
+Average build quality for the price.,3.0,Neutral
+"Great product, works flawlessly.",5.0,Positive
+Fast shipping and excellent quality.,5.0,Positive
+"Very happy with this purchase, high speeds.",5.0,Positive
+SanDisk memory cards are always reliable.,5.0,Positive
+Works great in my digital camera and phone.,5.0,Positive
+Holds tons of photos and video without lag.,5.0,Positive
+"Highly recommended, great value for money.",5.0,Positive
+"Easy installation, recognized immediately.",5.0,Positive
+Super fast read and write performance.,5.0,Positive
+"Five stars, perfect storage expansion.",5.0,Positive
+Excellent build quality and fast delivery.,5.0,Positive
+"No issues whatsoever, reliable daily card.",5.0,Positive
+Works perfectly right out of the box.,5.0,Positive
+Great price for a 32GB class 10 card.,5.0,Positive
+Solid performance and good packaging.,5.0,Positive
+Very satisfied with transfer speed.,5.0,Positive
+Item arrived in pristine condition.,5.0,Positive

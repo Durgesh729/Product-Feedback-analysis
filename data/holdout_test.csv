@@ -1,0 +1,21 @@
+reviewText,sentiment,overall
+I hate this product.,Negative,1.0
+Battery life is terrible.,Negative,1.0
+"After eating this product, I am not feeling well.",Negative,1.0
+This product made me sick.,Negative,1.0
+The charging cable is missing and the charging port is inconvenient.,Negative,1.0
+This product is completely useless.,Negative,1.0
+The product stopped working after two days.,Negative,1.0
+I am extremely disappointed with this product.,Negative,1.0
+I love this product.,Positive,5.0
+The product quality is excellent.,Positive,5.0
+This product works perfectly.,Positive,5.0
+I am extremely satisfied with this purchase.,Positive,5.0
+The battery life is excellent.,Positive,5.0
+The product exceeded my expectations.,Positive,5.0
+The package arrived yesterday.,Neutral,3.0
+The product comes in three colors.,Neutral,3.0
+The box contains two items.,Neutral,3.0
+The package includes a charging cable.,Neutral,3.0
+The product was delivered this morning.,Neutral,3.0
+The product is available in two sizes.,Neutral,3.0

@@ -1,0 +1,32 @@
+==================================================
+MODEL EVALUATION REPORT
+==================================================
+Model: Logistic Regression (Primary Model)
+Dataset Size: 992 test samples
+
+--------------------------------------------------
+METRICS SUMMARY
+--------------------------------------------------
+Accuracy:            0.9264 (92.64%)
+Weighted Precision:  0.9234
+Weighted Recall:     0.9264
+Weighted F1-Score:   0.9230
+
+Macro Precision:     0.6259
+Macro Recall:        0.6409
+Macro F1-Score:      0.6193
+
+--------------------------------------------------
+DETAILED CLASSIFICATION REPORT
+--------------------------------------------------
+              precision    recall  f1-score   support
+
+    Negative       0.62      0.83      0.71        70
+     Neutral       0.29      0.13      0.18        30
+    Positive       0.97      0.96      0.96       892
+
+    accuracy                           0.93       992
+   macro avg       0.63      0.64      0.62       992
+weighted avg       0.92      0.93      0.92       992
+
+==================================================

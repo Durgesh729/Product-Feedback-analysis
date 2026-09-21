@@ -1,0 +1,72 @@
+==================================================
+   MULTI-DOMAIN MODEL FINAL EVALUATION REPORT    
+==================================================
+Evaluated Test Set Size: 29904 samples (Grouped by product_id)
+Model Artifacts: models/multi_domain_sentiment_model.pkl
+Vectorizer Artifacts: models/multi_domain_tfidf_vectorizer.pkl
+
+--- OVERALL METRICS COMPARISON ---
+Metric                 | Old Model B Baseline   | New Multi-Domain Model
+------------------------------------------------------------------------
+Accuracy               | 91.62% (0.9162)        | 76.60% (0.7660)
+Macro Precision        | 0.5484                 | 0.7338
+Macro Recall           | 0.5897                 | 0.7376
+Macro F1               | 0.5657                 | 0.7331
+Weighted F1            | 0.9133                 | 0.7733
+
+--- PER-CLASS F1 SCORE COMPARISON ---
+Class        | Old Model B Baseline   | New Multi-Domain Model
+------------------------------------------------------------
+Negative     | 0.6974                 | 0.8083 (P: 0.8307, R: 0.7871)
+Neutral      | 0.0408                 | 0.5318 (P: 0.4806, R: 0.5953)
+Positive     | 0.9590                 | 0.8592 (P: 0.8900, R: 0.8304)
+
+--- CONFUSION MATRIX ---
+Labels order: ['Negative', 'Neutral', 'Positive']
+[[9429 2233  318]
+ [1516 3564  907]
+ [ 405 1619 9913]]
+
+--- DETAILED CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+    Negative     0.8307    0.7871    0.8083     11980
+     Neutral     0.4806    0.5953    0.5318      5987
+    Positive     0.8900    0.8304    0.8592     11937
+
+    accuracy                         0.7660     29904
+   macro avg     0.7338    0.7376    0.7331     29904
+weighted avg     0.7843    0.7660    0.7733     29904
+
+
+
+==================================================
+   135-EXAMPLE UNSEEN MANUAL SANITY TEST REPORT   
+==================================================
+Total Benchmark Examples: 135 (9 Domains x 3 Sentiments x 5 Examples)
+Text Overlap with Training Data: 0% (VERIFIED)
+Benchmark Accuracy: 68.15% (0.6815)
+Benchmark Macro F1: 0.6370
+
+PER-DOMAIN UNSEEN BENCHMARK ACCURACY & MACRO F1:
+Domain             | Accuracy | Macro F1
+------------------------------------------
+apparel            |  80.00%  | 0.7713  
+automotive         |  60.00%  | 0.5000  
+beauty             |  73.33%  | 0.6706  
+electronics        |  53.33%  | 0.4444  
+grocery            |  60.00%  | 0.5556  
+home               |  73.33%  | 0.7222  
+kitchen            |  73.33%  | 0.7107  
+personal care      |  80.00%  | 0.7919  
+sports             |  60.00%  | 0.4786  
+
+--- QUALITATIVE INTERDENTAL BRUSH TEST RESULT ---
+Review Text: "The angle provided in this interdental brush is not accurate. It hurts the gums. The bristle pin length is very short for pre molar and molar teeth. So difficult clean teeth from one side. Poor quality plastic is used."
+Domain: personal care
+Expected Sentiment: Negative
+Predicted Sentiment: Negative
+Predicted Class Probabilities:
+   - Negative: 0.8461
+   - Neutral:  0.1327
+   - Positive: 0.0212

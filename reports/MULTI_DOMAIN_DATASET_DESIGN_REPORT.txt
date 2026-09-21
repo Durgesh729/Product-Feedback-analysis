@@ -1,0 +1,50 @@
+==================================================
+       DATA CLEANING POLICY & DUPLICATE ANALYSIS   
+==================================================
+Initial Dataset Rows: 200000
+Missing Titles: 33 (Filled with empty string '')
+
+DUPLICATE TEXT BREAKDOWN:
+- Category A (Duplicate text, SAME sentiment label): 628 rows (243 unique texts)
+- Category B (Duplicate text, CONFLICTING sentiment labels): 256 rows (67 unique texts)
+- Category C (Duplicate text, DIFFERENT products): 884 rows (310 unique texts)
+
+CLEANING POLICY RULES:
+1. Title NaNs: Replaced with empty string '' so concatenation ('title body') executes cleanly.
+2. Text Normalization: Leading and trailing whitespaces stripped from review_title and review_body.
+3. Category B Policy (Conflicting Sentiment Labels): REMOVE ALL INSTANCES. Conflicting labels on identical text (e.g. 'Great product' labeled 1 star and 5 stars) introduce severe label noise.
+4. Category A Policy (Same Sentiment Labels): DEDUPLICATE TEXT. Keep only 1 representative record to prevent identical reviews from contaminating train/validation/test splits.
+5. Category C Policy (Cross-product duplicate text): DEDUPLICATE. Keeping 1 instance ensures product-level split isolation without duplicate text leakage.
+6. Empty Body Policy: Drop any record where review_body after whitespace stripping is empty.
+
+EXECUTION RESULTS:
+- Conflicting label rows dropped (Category B): 256
+- Duplicate text rows dropped (Category A & C deduplication): 385
+- Total rows dropped: 641
+- Final Cleaned Dataset Rows: 199359
+
+POST-CLEANING SENTIMENT DISTRIBUTION:
+- Negative: 79771 (40.01%)
+- Positive: 79700 (39.98%)
+- Neutral: 39888 (20.01%)
+
+==================================================
+   LEAKAGE-SAFE STRATIFIED GROUP SPLIT REPORT     
+==================================================
+Splitting Group Column: product_id
+Base Random Seed: 42 (Selected Trial Seed: 54)
+Zero Product Leakage: VERIFIED (Train-Val: 0, Train-Test: 0, Val-Test: 0)
+
+SPLIT SIZES & PERCENTAGES:
+Total Cleaned Rows: 199359
+Train Set:       139594 rows (70.02%) | Unique Products: 129478
+Validation Set:   29861 rows (14.98%) | Unique Products: 27746
+Test Set:         29904 rows (15.00%) | Unique Products: 27746
+
+EXACT SENTIMENT CLASS DISTRIBUTIONS:
+Split        | Negative           | Neutral            | Positive          
+------------------------------------------------------------------------
+Population   | 79771 (40.01%)     | 39888 (20.01%)     | 79700 (39.98%)    
+Train        | 55841 (40.00%)     | 27943 (20.02%)     | 55810 (39.98%)    
+Validation   | 11950 (40.02%)     | 5958 (19.95%)      | 11953 (40.03%)    
+Test         | 11980 (40.06%)     | 5987 (20.02%)      | 11937 (39.92%)    

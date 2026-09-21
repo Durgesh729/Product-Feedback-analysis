@@ -1,0 +1,16 @@
+text,expected_category,domain_status,predicted_category,negative_probability,neutral_probability,positive_probability,correct
+"After eating this product, I am not feeling well.",Negative,Product Feedback Detected,Negative,64.63%,17.36%,18.01%,True
+This product made me sick.,Negative,Product Feedback Detected,Negative,61.49%,8.06%,30.45%,True
+This product is defective and useless.,Negative,Product Feedback Detected,Negative,69.42%,10.69%,19.90%,True
+The product stopped working after two days.,Negative,Product Feedback Detected,Negative,90.28%,5.86%,3.87%,True
+The battery life is terrible.,Negative,Product Feedback Detected,Negative,83.54%,4.40%,12.06%,True
+The product quality is excellent.,Positive,Product Feedback Detected,Positive,19.19%,8.06%,72.74%,True
+I love this product.,Positive,Product Feedback Detected,Positive,13.57%,12.37%,74.07%,True
+The product works perfectly.,Positive,Product Feedback Detected,Positive,3.60%,39.76%,56.63%,True
+I am very satisfied with this product.,Positive,Product Feedback Detected,Positive,19.14%,13.01%,67.85%,True
+The battery life is excellent.,Positive,Product Feedback Detected,Positive,42.74%,6.75%,50.51%,True
+The package arrived yesterday.,Neutral,Product Feedback Detected,Neutral,7.18%,71.52%,21.30%,True
+The product comes in three colors.,Neutral,Product Feedback Detected,Positive,24.11%,13.28%,62.61%,False
+The box contains two items.,Neutral,Product Feedback Detected,Neutral,13.75%,77.17%,9.08%,True
+The product was delivered this morning.,Neutral,Product Feedback Detected,Neutral,8.06%,79.18%,12.76%,True
+The package includes a charger.,Neutral,Product Feedback Detected,Positive,11.22%,18.91%,69.88%,False

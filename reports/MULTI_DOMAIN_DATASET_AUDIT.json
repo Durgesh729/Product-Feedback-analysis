@@ -1,0 +1,511 @@
+{
+  "total_rows": 200000,
+  "total_columns": 8,
+  "column_dtypes": {
+    "review_id": "object",
+    "product_id": "object",
+    "reviewer_id": "object",
+    "stars": "int64",
+    "review_body": "object",
+    "review_title": "object",
+    "language": "object",
+    "product_category": "object"
+  },
+  "missing_values": {
+    "review_id": 0,
+    "product_id": 0,
+    "reviewer_id": 0,
+    "stars": 0,
+    "review_body": 0,
+    "review_title": 33,
+    "language": 0,
+    "product_category": 0
+  },
+  "empty_strings": {
+    "review_id": 0,
+    "product_id": 0,
+    "reviewer_id": 0,
+    "review_body": 0,
+    "review_title": 0,
+    "language": 0,
+    "product_category": 0
+  },
+  "invalid_star_values_count": 0,
+  "language_distribution": {
+    "en": 200000
+  },
+  "unique_review_ids": 200000,
+  "unique_product_ids": 185541,
+  "unique_reviewer_ids": 196745,
+  "duplicate_complete_rows": 0,
+  "duplicate_review_body_count": 574,
+  "duplicate_review_title_count": 62565,
+  "product_reviews_per_product_stats": {
+    "mean": 1.0779288674740355,
+    "std": 0.3013231797357712,
+    "min": 1,
+    "max": 6,
+    "median": 1.0,
+    "q25": 1.0,
+    "q75": 1.0
+  },
+  "reviews_per_reviewer_stats": {
+    "mean": 1.0165442577956239,
+    "std": 0.13412157379151568,
+    "min": 1,
+    "max": 5,
+    "median": 1.0,
+    "q25": 1.0,
+    "q75": 1.0
+  },
+  "review_body_length_stats": {
+    "char_mean": 178.84632,
+    "char_std": 179.62775983438115,
+    "char_min": 15,
+    "char_max": 3908,
+    "char_median": 125.0,
+    "word_mean": 34.114,
+    "word_std": 34.201067857089086,
+    "word_min": 1,
+    "word_max": 769,
+    "word_median": 24.0
+  },
+  "review_title_length_stats": {
+    "char_mean": 24.203815,
+    "char_std": 17.78092813249076,
+    "char_min": 0,
+    "char_max": 128,
+    "char_median": 19.0,
+    "word_mean": 4.525755,
+    "word_std": 3.463694077983552,
+    "word_min": 0,
+    "word_max": 32,
+    "word_median": 3.0
+  },
+  "product_category_distribution": {
+    "home": 17679,
+    "apparel": 15951,
+    "wireless": 15717,
+    "other": 13418,
+    "beauty": 12091,
+    "drugstore": 11730,
+    "kitchen": 10382,
+    "toy": 8745,
+    "sports": 8277,
+    "automotive": 7506,
+    "lawn_and_garden": 7327,
+    "home_improvement": 7136,
+    "pet_products": 7082,
+    "digital_ebook_purchase": 6749,
+    "pc": 6401,
+    "electronics": 6186,
+    "office_product": 5521,
+    "shoes": 5197,
+    "grocery": 4730,
+    "book": 3756,
+    "baby_product": 3150,
+    "furniture": 2984,
+    "jewelry": 2747,
+    "camera": 2139,
+    "industrial_supplies": 1994,
+    "digital_video_download": 1364,
+    "luggage": 1328,
+    "musical_instruments": 1102,
+    "video_games": 775,
+    "watch": 761,
+    "personal_care_appliances": 75
+  },
+  "star_distribution": {
+    "1": 40000,
+    "2": 40000,
+    "3": 40000,
+    "4": 40000,
+    "5": 40000
+  },
+  "derived_sentiment_distribution": {
+    "Negative": 80000,
+    "Positive": 80000,
+    "Neutral": 40000
+  },
+  "derived_sentiment_percentages": {
+    "Negative": 40.0,
+    "Positive": 40.0,
+    "Neutral": 20.0
+  },
+  "category_x_sentiment_distribution": {
+    "apparel": {
+      "Negative": 5967,
+      "Neutral": 3849,
+      "Positive": 6135
+    },
+    "automotive": {
+      "Negative": 3072,
+      "Neutral": 1433,
+      "Positive": 3001
+    },
+    "baby_product": {
+      "Negative": 1149,
+      "Neutral": 685,
+      "Positive": 1316
+    },
+    "beauty": {
+      "Negative": 5214,
+      "Neutral": 2443,
+      "Positive": 4434
+    },
+    "book": {
+      "Negative": 1120,
+      "Neutral": 792,
+      "Positive": 1844
+    },
+    "camera": {
+      "Negative": 867,
+      "Neutral": 384,
+      "Positive": 888
+    },
+    "digital_ebook_purchase": {
+      "Negative": 1111,
+      "Neutral": 1375,
+      "Positive": 4263
+    },
+    "digital_video_download": {
+      "Negative": 607,
+      "Neutral": 271,
+      "Positive": 486
+    },
+    "drugstore": {
+      "Negative": 4785,
+      "Neutral": 2344,
+      "Positive": 4601
+    },
+    "electronics": {
+      "Negative": 2791,
+      "Neutral": 1056,
+      "Positive": 2339
+    },
+    "furniture": {
+      "Negative": 1194,
+      "Neutral": 665,
+      "Positive": 1125
+    },
+    "grocery": {
+      "Negative": 2200,
+      "Neutral": 933,
+      "Positive": 1597
+    },
+    "home": {
+      "Negative": 6819,
+      "Neutral": 3615,
+      "Positive": 7245
+    },
+    "home_improvement": {
+      "Negative": 2860,
+      "Neutral": 1332,
+      "Positive": 2944
+    },
+    "industrial_supplies": {
+      "Negative": 813,
+      "Neutral": 356,
+      "Positive": 825
+    },
+    "jewelry": {
+      "Negative": 1104,
+      "Neutral": 555,
+      "Positive": 1088
+    },
+    "kitchen": {
+      "Negative": 4057,
+      "Neutral": 1970,
+      "Positive": 4355
+    },
+    "lawn_and_garden": {
+      "Negative": 3282,
+      "Neutral": 1369,
+      "Positive": 2676
+    },
+    "luggage": {
+      "Negative": 423,
+      "Neutral": 285,
+      "Positive": 620
+    },
+    "musical_instruments": {
+      "Negative": 418,
+      "Neutral": 200,
+      "Positive": 484
+    },
+    "office_product": {
+      "Negative": 2167,
+      "Neutral": 1023,
+      "Positive": 2331
+    },
+    "other": {
+      "Negative": 5241,
+      "Neutral": 2633,
+      "Positive": 5544
+    },
+    "pc": {
+      "Negative": 2801,
+      "Neutral": 1131,
+      "Positive": 2469
+    },
+    "personal_care_appliances": {
+      "Negative": 35,
+      "Neutral": 14,
+      "Positive": 26
+    },
+    "pet_products": {
+      "Negative": 2978,
+      "Neutral": 1516,
+      "Positive": 2588
+    },
+    "shoes": {
+      "Negative": 1857,
+      "Neutral": 1210,
+      "Positive": 2130
+    },
+    "sports": {
+      "Negative": 2991,
+      "Neutral": 1666,
+      "Positive": 3620
+    },
+    "toy": {
+      "Negative": 3597,
+      "Neutral": 1731,
+      "Positive": 3417
+    },
+    "video_games": {
+      "Negative": 360,
+      "Neutral": 141,
+      "Positive": 274
+    },
+    "watch": {
+      "Negative": 302,
+      "Neutral": 171,
+      "Positive": 288
+    },
+    "wireless": {
+      "Negative": 7818,
+      "Neutral": 2852,
+      "Positive": 5047
+    }
+  },
+  "category_x_star_distribution": {
+    "apparel": {
+      "1": 2457,
+      "2": 3510,
+      "3": 3849,
+      "4": 3595,
+      "5": 2540
+    },
+    "automotive": {
+      "1": 1674,
+      "2": 1398,
+      "3": 1433,
+      "4": 1509,
+      "5": 1492
+    },
+    "baby_product": {
+      "1": 513,
+      "2": 636,
+      "3": 685,
+      "4": 617,
+      "5": 699
+    },
+    "beauty": {
+      "1": 2694,
+      "2": 2520,
+      "3": 2443,
+      "4": 2140,
+      "5": 2294
+    },
+    "book": {
+      "1": 535,
+      "2": 585,
+      "3": 792,
+      "4": 723,
+      "5": 1121
+    },
+    "camera": {
+      "1": 477,
+      "2": 390,
+      "3": 384,
+      "4": 427,
+      "5": 461
+    },
+    "digital_ebook_purchase": {
+      "1": 302,
+      "2": 809,
+      "3": 1375,
+      "4": 2613,
+      "5": 1650
+    },
+    "digital_video_download": {
+      "1": 291,
+      "2": 316,
+      "3": 271,
+      "4": 276,
+      "5": 210
+    },
+    "drugstore": {
+      "1": 2520,
+      "2": 2265,
+      "3": 2344,
+      "4": 2243,
+      "5": 2358
+    },
+    "electronics": {
+      "1": 1480,
+      "2": 1311,
+      "3": 1056,
+      "4": 1081,
+      "5": 1258
+    },
+    "furniture": {
+      "1": 559,
+      "2": 635,
+      "3": 665,
+      "4": 614,
+      "5": 511
+    },
+    "grocery": {
+      "1": 1236,
+      "2": 964,
+      "3": 933,
+      "4": 695,
+      "5": 902
+    },
+    "home": {
+      "1": 3308,
+      "2": 3511,
+      "3": 3615,
+      "4": 3520,
+      "5": 3725
+    },
+    "home_improvement": {
+      "1": 1466,
+      "2": 1394,
+      "3": 1332,
+      "4": 1397,
+      "5": 1547
+    },
+    "industrial_supplies": {
+      "1": 439,
+      "2": 374,
+      "3": 356,
+      "4": 398,
+      "5": 427
+    },
+    "jewelry": {
+      "1": 526,
+      "2": 578,
+      "3": 555,
+      "4": 557,
+      "5": 531
+    },
+    "kitchen": {
+      "1": 2027,
+      "2": 2030,
+      "3": 1970,
+      "4": 1990,
+      "5": 2365
+    },
+    "lawn_and_garden": {
+      "1": 1778,
+      "2": 1504,
+      "3": 1369,
+      "4": 1270,
+      "5": 1406
+    },
+    "luggage": {
+      "1": 178,
+      "2": 245,
+      "3": 285,
+      "4": 310,
+      "5": 310
+    },
+    "musical_instruments": {
+      "1": 214,
+      "2": 204,
+      "3": 200,
+      "4": 244,
+      "5": 240
+    },
+    "office_product": {
+      "1": 1112,
+      "2": 1055,
+      "3": 1023,
+      "4": 1096,
+      "5": 1235
+    },
+    "other": {
+      "1": 2695,
+      "2": 2546,
+      "3": 2633,
+      "4": 2819,
+      "5": 2725
+    },
+    "pc": {
+      "1": 1550,
+      "2": 1251,
+      "3": 1131,
+      "4": 1200,
+      "5": 1269
+    },
+    "personal_care_appliances": {
+      "1": 19,
+      "2": 16,
+      "3": 14,
+      "4": 9,
+      "5": 17
+    },
+    "pet_products": {
+      "1": 1417,
+      "2": 1561,
+      "3": 1516,
+      "4": 1264,
+      "5": 1324
+    },
+    "shoes": {
+      "1": 763,
+      "2": 1094,
+      "3": 1210,
+      "4": 1162,
+      "5": 968
+    },
+    "sports": {
+      "1": 1442,
+      "2": 1549,
+      "3": 1666,
+      "4": 1823,
+      "5": 1797
+    },
+    "toy": {
+      "1": 1862,
+      "2": 1735,
+      "3": 1731,
+      "4": 1626,
+      "5": 1791
+    },
+    "video_games": {
+      "1": 213,
+      "2": 147,
+      "3": 141,
+      "4": 144,
+      "5": 130
+    },
+    "watch": {
+      "1": 153,
+      "2": 149,
+      "3": 171,
+      "4": 167,
+      "5": 121
+    },
+    "wireless": {
+      "1": 4100,
+      "2": 3718,
+      "3": 2852,
+      "4": 2471,
+      "5": 2576
+    }
+  }
+}
