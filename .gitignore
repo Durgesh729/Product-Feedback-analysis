@@ -16,3 +16,7 @@ env/
 .idea/
 .DS_Store
 Thumbs.db
+
+#txt
+NLP_CONCEPTS_TO_KNOW.txt
+PROJECT_EXECUTION_LOG.txt
