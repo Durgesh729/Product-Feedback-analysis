@@ -519,12 +519,6 @@ async def get_web_interface():
 
                 <!-- Single Result Panel -->
                 <div id="single-result" class="result-panel">
-                    <!-- Domain Validation Notice -->
-                    <div id="domain-notice" class="domain-box">
-                        <strong id="domain-status-title">Input Status</strong>
-                        <p id="domain-msg" style="margin-top: 0.3rem;"></p>
-                    </div>
-
                     <!-- Valid Prediction Panel -->
                     <div id="valid-prediction-box">
                         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
@@ -535,12 +529,7 @@ async def get_web_interface():
                             <div style="text-align: right;">
                                 <div style="font-size: 0.85rem; color: var(--text-muted);">MODEL PROBABILITY</div>
                                 <div id="model-prob-score" style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">0%</div>
-                                <div style="font-size: 0.75rem; color: var(--text-muted);">Estimated Class Probability</div>
                             </div>
-                        </div>
-
-                        <div style="margin-top: 1rem; background: #F8FAFC; padding: 0.8rem; border-radius: 6px; font-size: 0.9rem;">
-                            <strong>Processed Text: </strong><span id="processed-text-display" style="font-family: monospace; color: var(--primary);"></span>
                         </div>
 
                         <div style="margin-top: 1.2rem;">
@@ -558,30 +547,6 @@ async def get_web_interface():
                                 <div class="progress-bar-bg"><div id="prob-neu-bar" class="progress-bar-fill fill-neu" style="width: 0%;"></div></div>
                             </div>
                         </div>
-
-                        <div style="margin-top: 1rem; font-size: 0.88rem; color: var(--text-muted);">
-                            <strong>Model Architecture: </strong>TF-IDF Vectorizer + Logistic Regression (balanced class weights)<br>
-                            <strong>Interpretation: </strong><span id="interpretation-text"></span>
-                        </div>
-                    </div>
-
-                    <!-- View NLP Processing Expandable Drawer -->
-                    <details id="nlp-details">
-                        <summary>🔍 View NLP Processing</summary>
-                        <div class="nlp-flow">
-                            <div class="nlp-step"><strong>1. Original Input:</strong> <span id="nlp-orig"></span></div>
-                            <div class="nlp-step"><strong>2. Cleaned Text:</strong> <span id="nlp-clean"></span></div>
-                            <div class="nlp-step"><strong>3. Tokens:</strong> <span id="nlp-tokens"></span></div>
-                            <div class="nlp-step"><strong>4. Processed Tokens (Lemmatized & Filtered):</strong> <span id="nlp-proc"></span></div>
-                            <div class="nlp-step"><strong>5. Feature Matrix:</strong> <span id="nlp-features"></span> non-zero TF-IDF features (Vocabulary cap: <span id="nlp-vocab"></span>)</div>
-                            <div class="nlp-step"><strong>6. Classifier Model:</strong> <span id="nlp-model"></span></div>
-                            <div class="nlp-step"><strong>7. Output:</strong> <span id="nlp-output"></span></div>
-                        </div>
-                    </details>
-
-                    <!-- Model Limitations Note -->
-                    <div class="note-box">
-                        <strong>📌 Important Note:</strong> Probability shown is the model's estimated probability for the predicted class. It does not guarantee that the prediction is correct. This system uses a supervised machine-learning model trained on a specific product-review dataset. Its predictions depend on the training data and may be incorrect for unusual, ambiguous, sarcastic, or unrelated text.
                     </div>
                 </div>
             </div>
@@ -592,7 +557,7 @@ async def get_web_interface():
             <div class="card">
                 <h2>Batch CSV Product Feedback Processing</h2>
                 <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.2rem;">
-                    Upload a CSV dataset containing customer reviews. The system auto-detects the review text column and evaluates sentiment in bulk.
+                    Upload a CSV dataset containing customer reviews. Start Review from 2nd row.
                 </p>
 
                 <div class="upload-box" onclick="document.getElementById('csv-file').click()">
@@ -633,22 +598,6 @@ async def get_web_interface():
                             <div style="font-size: 0.85rem; color: var(--text-muted);">Neutral Reviews</div>
                             <div id="metric-neu" class="num" style="color: #D97706;">0</div>
                         </div>
-                    </div>
-
-                    <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">Analyzed Feedback Sample</h4>
-                    <div style="overflow-x: auto;">
-                        <table id="batch-table">
-                            <thead>
-                                <tr>
-                                    <th>Review Text</th>
-                                    <th>Predicted Sentiment</th>
-                                    <th>Model Probability</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Filled dynamically -->
-                            </tbody>
-                        </table>
                     </div>
                 </div>
             </div>
@@ -696,16 +645,9 @@ async def get_web_interface():
                     return;
                 }
 
-                // 1. Update Domain Validation Section
-                const domainNotice = document.getElementById('domain-notice');
-                const domainTitle = document.getElementById('domain-status-title');
-                const domainMsg = document.getElementById('domain-msg');
                 const validBox = document.getElementById('valid-prediction-box');
 
                 if (data.is_valid_domain) {
-                    domainNotice.className = 'domain-box domain-valid';
-                    domainTitle.innerText = 'Input Validation: Product Feedback Detected';
-                    domainMsg.innerText = data.domain_message;
                     validBox.style.display = 'block';
 
                     // Update Sentiment & Probability
@@ -726,25 +668,10 @@ async def get_web_interface():
                     document.getElementById('prob-neu-val').innerText = (probs.Neutral || 0) + '%';
                     document.getElementById('prob-neu-bar').style.width = (probs.Neutral || 0) + '%';
 
-                    document.getElementById('processed-text-display').innerText = data.cleaned_text || '(empty)';
-                    document.getElementById('interpretation-text').innerText = 'The trained model classified this product feedback as ' + data.sentiment + '.';
                 } else {
-                    domainNotice.className = 'domain-box domain-invalid';
-                    domainTitle.innerText = '⚠️ Input Status: Outside Product Feedback Domain';
-                    domainMsg.innerText = data.domain_message;
+                    alert(data.domain_message || 'Input is outside product feedback domain.');
                     validBox.style.display = 'none';
                 }
-
-                // 2. Populate View NLP Processing Drawer
-                const nlp = data.nlp_steps || {};
-                document.getElementById('nlp-orig').innerText = nlp.original_text || text;
-                document.getElementById('nlp-clean').innerText = nlp.cleaned_text || '';
-                document.getElementById('nlp-tokens').innerText = JSON.stringify(nlp.tokens || []);
-                document.getElementById('nlp-proc').innerText = nlp.processed_text || '';
-                document.getElementById('nlp-features').innerText = nlp.num_nonzero_features || 0;
-                document.getElementById('nlp-vocab').innerText = nlp.vocabulary_size || 5000;
-                document.getElementById('nlp-model').innerText = nlp.model_used || 'TF-IDF + Logistic Regression';
-                document.getElementById('nlp-output').innerText = data.is_valid_domain ? data.sentiment : 'Outside Domain (Prediction Suppressed)';
 
                 document.getElementById('single-result').style.display = 'block';
             } catch (err) {
@@ -796,33 +723,6 @@ async def get_web_interface():
                 // Update Download Link
                 const downloadBtn = document.getElementById('download-btn');
                 downloadBtn.href = '/api/download/' + data.download_filename;
-
-                // Update Table Rows
-                const tbody = document.querySelector('#batch-table tbody');
-                tbody.innerHTML = '';
-
-                const textCol = summary.detected_text_column;
-                data.results.forEach(row => {
-                    const tr = document.createElement('tr');
-                    const textCell = document.createElement('td');
-                    textCell.innerText = row[textCol] || '';
-
-                    const sentCell = document.createElement('td');
-                    const badge = document.createElement('span');
-                    badge.className = 'badge badge-' + (row.predicted_sentiment || 'neutral').toLowerCase();
-                    badge.style.fontSize = '0.8rem';
-                    badge.style.padding = '0.2rem 0.6rem';
-                    badge.innerText = row.predicted_sentiment;
-                    sentCell.appendChild(badge);
-
-                    const confCell = document.createElement('td');
-                    confCell.innerText = (row.confidence || 100) + '%';
-
-                    tr.appendChild(textCell);
-                    tr.appendChild(sentCell);
-                    tr.appendChild(confCell);
-                    tbody.appendChild(tr);
-                });
 
                 document.getElementById('batch-result').style.display = 'block';
             } catch (err) {
