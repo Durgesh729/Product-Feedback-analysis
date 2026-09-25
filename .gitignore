@@ -16,6 +16,7 @@ env/
 .idea/
 .DS_Store
 Thumbs.db
+.kilo/
 
 #txt
 NLP_CONCEPTS_TO_KNOW.txt
